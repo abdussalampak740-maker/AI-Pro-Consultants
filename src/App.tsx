@@ -14,7 +14,14 @@ import {
   PlayCircle,
   FileSearch,
   Settings,
-  Rocket
+  Rocket,
+  Building2,
+  ShoppingBag,
+  Stethoscope,
+  Briefcase,
+  UserCircle,
+  Home,
+  Gavel
 } from 'lucide-react';
 import Navbar from './components/Navbar.tsx';
 import Hero from './components/Hero.tsx';
@@ -286,125 +293,150 @@ const Results = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 gap-8 text-center lg:text-left">
         <div className="max-w-xl">
-           <div className="text-[10px] uppercase font-bold text-blue-400 tracking-widest mb-4">Case Studies</div>
-           <h2 className="text-4xl font-extrabold tracking-tight">Measurable Business <span className="text-white/40">Outcomes.</span></h2>
+           <div className="text-[10px] uppercase font-bold text-blue-400 tracking-widest mb-4 flex items-center justify-center lg:justify-start gap-2">
+             <div className="w-1 h-1 bg-blue-500 rounded-full animate-ping" />
+             High Impact Case Studies
+           </div>
+           <h2 className="text-4xl lg:text-6xl font-extrabold tracking-tight uppercase">Measurable Business <br/><span className="text-white/40">Outcomes.</span></h2>
         </div>
         <div className="flex gap-4">
-           <div className="px-5 py-2 rounded-full glass text-[10px] font-bold text-white tracking-widest cursor-default">ROI FOCUSED</div>
-           <div className="px-5 py-2 rounded-full glass border-green-500/20 text-[10px] font-bold text-green-400 tracking-widest cursor-default">READY TO SCALE</div>
+           <div className="px-5 py-2 rounded-full glass text-[10px] font-bold text-white tracking-widest cursor-default uppercase border border-white/5">ROI Driven</div>
+           <div className="px-5 py-2 rounded-full bg-blue-600/20 border border-blue-500/20 text-[10px] font-bold text-blue-400 tracking-widest cursor-default uppercase">Ready To Scale</div>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-6">
-        <div className="space-y-6">
-          {[
-            { 
-              industry: "E-commerce", 
-              client: "Global Retailer", 
-              result: "+42% Conversion", 
-              challenges: "High cart abandonment rates and generic product recommendations leading to low average order value.",
-              solution: "Integrated AI-powered personalized product recommendations and autonomous abandoned cart recovery agents.",
-              keyMetrics: [
-                "15k+ enquiries handled monthly",
-                "94% resolution rate without human intervention",
-                "32% increase in average order value"
-              ],
-              metric: "Efficiency"
-            },
-            { 
-              industry: "B2B SaaS", 
-              client: "Enterprise CRM", 
-              result: "$120k Pipeline", 
-              challenges: "Inbound sales team overwhelmed by low-quality leads while missing high-value enterprise signals.",
-              solution: "Deployed reactive AI agents that proactively identified and engaged high-value leads based on intent signals.",
-              keyMetrics: [
-                "800+ high-intent leads qualified",
-                "45 enterprise demos booked in 30 days",
-                "Reduction in lead response time to < 2 mins"
-              ],
-              metric: "Growth"
-            },
-            { 
-              industry: "Healthcare", 
-              client: "Private Clinic", 
-              result: "70% More Bookings", 
-              challenges: "Receptionists missing 30% of after-hours calls and high patient no-show rates due to manual follow-up logs.",
-              solution: "AI Voice Agent handling 100% of inbound scheduling and automated patient follow-ups via natural language voice.",
-              keyMetrics: [
-                "100% inbound call coverage 24/7",
-                "40% reduction in patient no-shows",
-                "Zero missed appointments since deployment"
-              ],
-              metric: "Scale"
-            }
-          ].map((item, i) => (
-            <div key={i} className="p-8 rounded-3xl bg-white/5 border border-white/5 flex flex-col group hover:bg-white/10 transition-all">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-tighter">{item.industry}</span>
-                    <span className="text-[10px] text-slate-700">•</span>
-                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">{item.client}</span>
-                  </div>
-                  <div className="text-2xl font-black text-white font-display tracking-tight uppercase leading-none">{item.result}</div>
-                </div>
-                <div className="px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-widest border border-blue-500/20">
-                  {item.metric}
-                </div>
-              </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { 
+            industry: "E-commerce", 
+            icon: <ShoppingBag className="w-8 h-8 text-indigo-400" />,
+            client: "Global Retailer", 
+            result: "+42% Conversion", 
+            description: "Fixed high cart abandonment by deploying 24/7 AI recovery agents and personalized logic.",
+            metricLabel: "Outcome",
+            metricValue: "+42% Recovery Rate",
+            accent: "indigo"
+          },
+          { 
+            industry: "B2B SaaS", 
+            icon: <Building2 className="w-8 h-8 text-blue-400" />,
+            client: "Enterprise CRM", 
+            result: "$120k Pipeline", 
+            description: "Streamlined inbound lead capture with intent-based AI qualification and instant booking.",
+            metricLabel: "Lead Growth",
+            metricValue: "$120k New Pipeline",
+            accent: "blue"
+          },
+          { 
+            industry: "Healthcare", 
+            icon: <Stethoscope className="w-8 h-8 text-emerald-400" />,
+            client: "Private Clinic", 
+            result: "70% More Bookings", 
+            description: "Automated after-hours scheduling and patient follow-ups via human-like AI Voice agents.",
+            metricLabel: "Booking Lift",
+            metricValue: "70% Increase",
+            accent: "emerald"
+          },
+          { 
+            industry: "Service Businesses", 
+            icon: <Briefcase className="w-8 h-8 text-orange-400" />,
+            client: "HVAC Group", 
+            result: "3x More Quotes", 
+            description: "Eliminated missed field calls with an AI dispatch agent that qualifies leads via SMS/Voice.",
+            metricLabel: "Quote Volume",
+            metricValue: "3x Growth",
+            accent: "orange"
+          },
+          { 
+            industry: "Small Business", 
+            icon: <UserCircle className="w-8 h-8 text-purple-400" />,
+            client: "Local Agency", 
+            result: "20h Saved/Week", 
+            description: "Recovered founder time by automating repetitive admin, content, and client reporting workflows.",
+            metricLabel: "Time Saved",
+            metricValue: "20+ Hours/Week",
+            accent: "purple"
+          },
+          { 
+            industry: "Real Estate", 
+            icon: <Home className="w-8 h-8 text-pink-400" />,
+            client: "Elite Realty", 
+            result: "90% Response Rate", 
+            description: "Solved lead decay with instant AI engagement and viewing synchronization across platforms.",
+            metricLabel: "Response Time",
+            metricValue: "< 30 Seconds",
+            accent: "pink"
+          }
+        ].map((item, i) => (
+          <motion.div 
+            key={i} 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1 }}
+            className="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group hover:border-white/20 transition-all flex flex-col"
+          >
+            <div className={`absolute -right-4 -top-4 w-24 h-24 bg-${item.accent}-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity`} />
+            
+            <div className={`w-12 h-12 mb-6 rounded-xl bg-${item.accent}-500/10 flex items-center justify-center group-hover:scale-110 transition-transform`}>
+              {item.icon}
+            </div>
 
-              <div className="grid sm:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">The Challenge</h4>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">{item.challenges}</p>
-                </div>
-                <div>
-                  <h4 className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-2">Our Solution</h4>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">{item.solution}</p>
-                </div>
-              </div>
+            <div className="flex flex-col mb-4">
+              <span className={`text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1`}>{item.industry}</span>
+              <h3 className="text-xl font-bold text-white font-display tracking-tight uppercase leading-none">{item.result}</h3>
+            </div>
 
-              <div className="pt-6 border-t border-white/5">
-                <h4 className="text-[10px] font-bold text-white uppercase tracking-widest mb-4">Key Metrics Achieved</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  {item.keyMetrics.map((k, idx) => (
-                    <div key={idx} className="flex flex-col">
-                      <div className="text-white text-[10px] font-bold leading-tight">{k}</div>
-                    </div>
-                  ))}
+            <p className="text-sm text-slate-400 leading-relaxed mb-8 flex-grow">
+              {item.description}
+            </p>
+
+            <div className="pt-6 border-t border-white/5 flex flex-col space-y-1">
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{item.metricLabel}</span>
+              <span className={`text-[11px] font-bold text-${item.accent}-400 uppercase tracking-widest`}>{item.metricValue}</span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="mt-12 grid lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-8 flex flex-col justify-center">
+          <div className="p-8 md:p-12 rounded-[2.5rem] bg-gradient-to-br from-blue-600 to-indigo-600 text-white relative overflow-hidden group shadow-2xl">
+            <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-white/10 blur-3xl rounded-full" />
+            <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
+              <div>
+                <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">Be Our Next <span className="text-blue-200">Wins.</span></h3>
+                <p className="text-sm text-white/80 leading-relaxed font-medium">We only accept 3 new enterprise clients per month to ensure absolute quality and zero-lag deployment.</p>
+              </div>
+              <div className="flex flex-col items-center md:items-end">
+                <button 
+                  onClick={useModal().openAudit}
+                  className="px-8 py-4 bg-white text-black font-black text-[10px] uppercase tracking-widest rounded-xl shadow-xl active:scale-95 transition-transform w-full md:w-auto"
+                >
+                  Analyze My Business
+                </button>
+                <div className="mt-4 flex items-center gap-2">
+                   <div className="flex -space-x-2">
+                      {[1,2,3].map(i => (
+                        <div key={i} className="w-6 h-6 rounded-full border border-blue-600 bg-slate-800">
+                           <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i+50}`} alt="" className="w-full h-full rounded-full" />
+                        </div>
+                      ))}
+                   </div>
+                   <span className="text-[8px] font-black uppercase tracking-widest text-blue-200">Limited Spots Left</span>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
 
-        <div className="bg-indigo-500/5 border border-indigo-500/20 rounded-[2rem] p-8 lg:p-12 flex flex-col items-center justify-center text-center overflow-hidden relative">
-           <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-transparent to-transparent opacity-50" />
-           <div className="relative z-10 w-full">
-              <div className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400 mb-6">Aggregate Success</div>
-              <div className="text-8xl font-black text-white font-display leading-none mb-4 tracking-tighter">+312%</div>
-              <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-10 pb-10 border-b border-indigo-500/20">Average Lead Increase Q3</div>
-              
-              <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden mb-6">
-                 <motion.div 
-                   initial={{ width: 0 }}
-                   whileInView={{ width: '85%' }}
-                   viewport={{ once: true }}
-                   className="h-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.6)]" 
-                 />
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 text-[10px] font-bold uppercase tracking-widest">
-                 <div className="text-left">
-                    <div className="text-slate-600 mb-1">Baseline</div>
-                    <div className="text-slate-400">Manual Operations</div>
-                 </div>
-                 <div className="text-right">
-                    <div className="text-indigo-400 mb-1">Target Optimized</div>
-                    <div className="text-white">AI Pro Systems Integration</div>
-                 </div>
-              </div>
-           </div>
+        <div className="lg:col-span-4">
+          <div className="bg-white/3 border border-white/5 rounded-[2.5rem] p-10 flex flex-col items-center justify-center text-center h-full">
+            <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-6">Aggregate Impact</div>
+            <div className="text-6xl font-black text-white font-display leading-none mb-4 tracking-tighter">+312%</div>
+            <div className="text-[10px] font-bold text-slate-600 uppercase tracking-[0.2em] mb-8">Average Growth Q3</div>
+            <div className="w-16 h-1 bg-blue-500 rounded-full" />
+          </div>
         </div>
       </div>
 

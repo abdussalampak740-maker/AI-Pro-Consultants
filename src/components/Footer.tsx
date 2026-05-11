@@ -11,11 +11,32 @@ export default function Footer() {
         </span>
       </div>
       
-      <div className="hidden md:flex gap-6 uppercase tracking-tighter font-bold">
-        <a href="#" className="hover:text-white transition-colors">Privacy</a>
-        <a href="#" className="hover:text-white transition-colors">Terms</a>
-        <a href="#" className="hover:text-white transition-colors">Twitter (X)</a>
-        <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+      <div className="flex items-center gap-6">
+        <div className="hidden md:flex gap-6 uppercase tracking-tighter font-bold">
+          <a href="#" className="hover:text-white transition-colors">Privacy</a>
+          <a href="#" className="hover:text-white transition-colors">Terms</a>
+        </div>
+        
+        <div className="flex items-center gap-4 border-l border-white/10 pl-6 h-4">
+          <a 
+            href="https://www.linkedin.com/company/ai-pro-consultants/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-blue-400 transition-colors"
+            title="LinkedIn"
+          >
+            <Linkedin className="w-4 h-4" />
+          </a>
+          <a 
+            href="https://web.facebook.com/AIProConsultants/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-blue-500 transition-colors"
+            title="Facebook"
+          >
+            <Facebook className="w-4 h-4" />
+          </a>
+        </div>
       </div>
 
       <div className="font-mono tracking-widest text-slate-600 hidden lg:block">
