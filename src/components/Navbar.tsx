@@ -31,6 +31,7 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Services</a>
+            <a href="#resources" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Resources</a>
             <a href="#how-it-works" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">How It Works</a>
             <a href="#results" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Results</a>
             <a href="#contact" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Contact Us</a>
@@ -59,6 +60,7 @@ export default function Navbar() {
           className="md:hidden glass border-b border-white/10 px-4 pt-2 pb-6 space-y-4"
         >
           <a href="#services" className="block text-base font-medium text-slate-300 hover:text-blue-400">Services</a>
+          <a href="#resources" className="block text-base font-medium text-slate-300 hover:text-blue-400">Resources</a>
           <a href="#how-it-works" className="block text-base font-medium text-slate-300 hover:text-blue-400">How It Works</a>
           <a href="#results" className="block text-base font-medium text-slate-300 hover:text-blue-400">Results</a>
           <a href="#faq" className="block text-base font-medium text-slate-300 hover:text-blue-400">FAQ</a>

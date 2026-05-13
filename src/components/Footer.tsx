@@ -19,6 +19,13 @@ export default function Footer() {
         
         <div className="flex items-center gap-4 border-l border-white/10 pl-6 h-4">
           <a 
+            href="mailto:aiproconsultantss@gmail.com" 
+            className="text-slate-500 hover:text-white transition-colors"
+            title="Email Us"
+          >
+            <Mail className="w-4 h-4" />
+          </a>
+          <a 
             href="https://www.linkedin.com/company/ai-pro-consultants/" 
             target="_blank" 
             rel="noopener noreferrer"

@@ -1,0 +1,24 @@
+# AI Pro Consultants
+> AI Pro Consultants is a premium AI automation agency specializing in 
+> custom LLM chatbots, AI voice agents, and workflow automation for 
+> B2B, healthcare, and e-commerce businesses.
+
+## Main Pages
+- Homepage: https://www.aiproconsultants.com/ — AI automation agency overview
+- Services: https://www.aiproconsultants.com/services — All AI services offered
+- Contact: https://www.aiproconsultants.com/contact — Book a free consultation
+
+## Guides & Resources
+- https://www.aiproconsultants.com/ai-automation-guide-for-b2b.html
+- https://www.aiproconsultants.com/ai-voice-agents-guide.html
+- https://www.aiproconsultants.com/llm-chatbot-development.html
+- https://www.aiproconsultants.com/healthcare-ai-automation.html
+- https://www.aiproconsultants.com/ecommerce-ai-solutions.html
+- https://www.aiproconsultants.com/ai-workflow-automation.html
+- https://www.aiproconsultants.com/n8n-vs-make-vs-zapier.html
+- https://www.aiproconsultants.com/ai-lead-generation-automation.html
+- https://www.aiproconsultants.com/what-is-ai-agent.html
+
+## Contact
+- Email: aiproconsultantss@gmail.com
+- Location: US

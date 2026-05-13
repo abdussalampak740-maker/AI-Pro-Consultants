@@ -32,48 +32,16 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "AI Automation and LLM Consulting",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "AI Pro Consultants",
-          "image": "https://www.aiproconsultants.com/logo.png",
-          "url": "https://www.aiproconsultants.com/",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "US"
-          }
-        },
+        "@type": "ProfessionalService",
+        "name": "AI Pro Consultants",
+        "url": "https://www.aiproconsultants.com",
+        "logo": "https://www.aiproconsultants.com/logo.png",
+        "description": "Premium AI automation agency specializing in LLM chatbots, voice agents, and workflow automation for B2B, healthcare, and e-commerce.",
+        "serviceType": ["AI Automation", "LLM Chatbot Development", "AI Voice Agents", "Workflow Automation"],
         "areaServed": "Worldwide",
-        "description": "AI Pro Consultants builds custom AI workflows, voice agents, and chatbots to drive ROI for modern businesses.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "AI Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "AI Voice Agents"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Custom LLM Chatbots"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Workflow Automation"
-              }
-            }
-          ]
-        }
+        "sameAs": [
+          "https://www.linkedin.com/company/aiproconsultants"
+        ]
       }
     </script>
   </head>
@@ -87,6 +55,7 @@
           </div>
           <div class="hidden md:flex items-center gap-8">
             <a href="#services" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Services</a>
+            <a href="#resources" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Resources</a>
             <a href="#how-it-works" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Process</a>
             <a href="#results" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Results</a>
             <button class="px-5 py-2.5 bg-white text-black font-black text-[10px] uppercase tracking-widest rounded-lg hover:bg-slate-200 transition-colors">
@@ -270,6 +239,84 @@
             <h2 class="text-4xl lg:text-7xl font-extrabold text-white mb-8 tracking-tight">Ready to AI-Proof Your Brand?</h2>
             <p class="text-slate-400 text-lg lg:text-xl mb-12 max-w-2xl">The window for adoption is closing. Secure your competitive advantage today.</p>
             <button class="px-10 py-6 bg-white text-black font-black rounded-2xl text-sm uppercase tracking-widest shadow-2xl">Book Your Discovery Call</button>
+          </div>
+        </section>
+
+        <section id="resources" class="py-24 border-t border-white/5 bg-white/2">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-white mb-8 uppercase tracking-widest text-center lg:text-left">Free Resources & Guides</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/ai-automation-guide-for-b2b.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Automation Guide for B2B Companies</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Master efficiency with our comprehensive guide to custom LLMs and workflow agents.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/ai-voice-agents-guide.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Voice Agents: Complete Guide</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Scale your inbound and outbound calls with human-like AI voice systems.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/llm-chatbot-development.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">Custom LLM Chatbot Development</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Why generic bots fail and how custom-trained LLMs drive real business results.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/healthcare-ai-automation.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI for Healthcare Providers</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">HIPAA-compliant automation for scheduling, billing, and patient follow-ups.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/ecommerce-ai-solutions.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Solutions for E-commerce</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Reduce support tickets and increase AOV with intelligent commerce agents.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/ai-workflow-automation.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Workflow Automation</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">How to save 20+ hours every week by connecting your high-level tech stack.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/ai-automation-roi-calculator-guide.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Automation ROI Guide</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">The mathematical framework for calculating the profit of AI in your business.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/n8n-vs-make-vs-zapier.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">n8n vs Make.com vs Zapier</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Expert comparison of the top automation tools for business AI scaling.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/ai-lead-generation-automation.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">AI Lead Generation Automation</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Precision B2B prospecting using intent-based AI research and outreach.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+              <a href="/what-is-ai-agent.html" class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+                <h3 class="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors">What is an AI Agent?</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">A plain English explanation of the future of autonomous business work.</p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+                  Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
 

@@ -1,4 +1,4 @@
-import { useState, FormEvent, createContext, useContext } from 'react';
+import { useState, FormEvent, createContext, useContext, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   CheckCircle2, 
@@ -488,6 +488,9 @@ const FinalCTA = () => {
               Book Your Discovery Call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <p className="mt-6 text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em]">Next Discovery session available in 24h</p>
+            <a href="mailto:aiproconsultantss@gmail.com" className="mt-4 text-blue-400 hover:text-blue-300 transition-colors font-mono tracking-wider text-xs">
+              aiproconsultantss@gmail.com
+            </a>
           </div>
         </div>
       </div>
@@ -495,8 +498,98 @@ const FinalCTA = () => {
   );
 };
 
+// --- Section: Resources ---
+const Resources = () => (
+  <section id="resources" className="py-24 border-t border-white/5 bg-white/2">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-2xl font-bold text-white mb-8 uppercase tracking-widest text-center lg:text-left text-sm md:text-2xl">Free Resources & Guides</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/ai-automation-guide-for-b2b.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Automation Guide for B2B Companies</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Master efficiency with our comprehensive guide to custom LLMs and workflow agents.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/ai-voice-agents-guide.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Voice Agents: Complete Guide</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Scale your inbound and outbound calls with human-like AI voice systems.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/llm-chatbot-development.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">Custom LLM Chatbot Development</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Why generic bots fail and how custom-trained LLMs drive real business results.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/healthcare-ai-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI for Healthcare Providers</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">HIPAA-compliant automation for scheduling, billing, and patient follow-ups.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/ecommerce-ai-solutions.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Solutions for E-commerce</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Reduce support tickets and increase AOV with intelligent commerce agents.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/ai-workflow-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Workflow Automation</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">How to save 20+ hours every week by connecting your high-level tech stack.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/ai-automation-roi-calculator-guide.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Automation ROI Guide</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">The mathematical framework for calculating the profit of AI in your business.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/n8n-vs-make-vs-zapier.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">n8n vs Make.com vs Zapier</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Expert comparison of the top automation tools for business AI scaling.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/ai-lead-generation-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Lead Generation Automation</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">Precision B2B prospecting using intent-based AI research and outreach.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+        <a href="/what-is-ai-agent.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+          <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">What is an AI Agent?</h3>
+          <p className="text-xs text-slate-500 leading-relaxed">A plain English explanation of the future of autonomous business work.</p>
+          <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+            Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
 export default function App() {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('audit') === 'true') {
+      setIsAuditOpen(true);
+      // Clean up the URL
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
 
   return (
     <ModalContext.Provider value={{ openAudit: () => setIsAuditOpen(true) }}>
@@ -510,6 +603,7 @@ export default function App() {
         <Results />
         <FAQ />
         <FinalCTA />
+        <Resources />
         <Footer />
         
         <AuditModal isOpen={isAuditOpen} onClose={() => setIsAuditOpen(false)} />
