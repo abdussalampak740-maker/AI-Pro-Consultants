@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://aiproconsultants.com/sitemap.xml
+Sitemap: https://www.aiproconsultants.com/sitemap.xml
