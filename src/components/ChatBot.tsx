@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Bot, User, Sparkles, Loader2, ArrowUpRight, Copy, Trash2, Check, Brain } from 'lucide-react';
+import { GoogleGenAI } from "@google/genai";
 import { useModal } from '../App.tsx';
 
 interface Message {
@@ -37,22 +38,48 @@ export default function ChatBot() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: messages,
-          userMessage: userMessage
-        })
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Server error');
+      const apiKey = process.env.GEMINI_API_KEY;
+      if (!apiKey) {
+        throw new Error('API Key missing');
       }
 
-      const data = await response.json();
-      setMessages(prev => [...prev, { role: 'bot', content: data.text }]);
+      const ai = new GoogleGenAI({ apiKey });
+      
+      const history = messages.map(msg => ({
+        role: msg.role === 'user' ? 'user' : 'model',
+        parts: [{ text: msg.content }]
+      }));
+
+      const response = await ai.models.generateContent({
+        model: "gemini-3-flash-preview",
+        contents: [
+          ...history,
+          { role: 'user', parts: [{ text: userMessage }] }
+        ],
+        config: {
+          systemInstruction: `You are the Lead Consultant at AI Pro Consultants, a high-end AI Automation Agency. 
+              
+          YOUR PERSONALITY:
+          - HUMAN-LIKE: No robotic fluff. Get straight to the point.
+          - EXTREMELY CONCISE: Maximum 2-3 short sentences. No essays.
+          - DIRECTLY RELEVANT: Answer the specific question asked immediately.
+          - CONVERSATIONAL: One natural transition like "Honestly," or "Actually," is fine, but brevity is priority.
+          - OPINIONATED: Give a direct expert recommendation instead of listing options.
+
+          BUSINESS CONTEXT:
+          - AI Pro Consultants automates Sales, CRM, and Workflows (Make.com/custom LLMs).
+          - We focus on pure ROI.
+          
+          CONVERSION:
+          - Only suggest "Free AI Audit" or "Book Call" if it naturally fits the conversation.
+          
+          IMPORTANT: You are a busy expert. Be helpful, be brief, but don't be a typical AI. Stop talking once the answer is given.`,
+          temperature: 0.8,
+        },
+      });
+
+      const botResponse = response.text || "I'm having trouble processing that. Could you rephrase or simply book a call?";
+      setMessages(prev => [...prev, { role: 'bot', content: botResponse }]);
     } catch (error) {
       console.error('Chat error:', error);
       setMessages(prev => [...prev, { role: 'bot', content: "I'm currently in maintenance mode. Please use our 'Book Call' button for direct assistance!" }]);

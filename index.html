@@ -78,7 +78,208 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static version of the site for SEO and JS-disabled browsers -->
+      <nav class="fixed top-0 left-0 right-0 z-[90] border-b border-white/5 bg-[#0B0E14]/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-black text-white tracking-tighter uppercase">AI PRO <span class="text-blue-500">CONSULTANTS</span></span>
+          </div>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#services" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Services</a>
+            <a href="#how-it-works" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Process</a>
+            <a href="#results" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest transition-colors">Results</a>
+            <button class="px-5 py-2.5 bg-white text-black font-black text-[10px] uppercase tracking-widest rounded-lg hover:bg-slate-200 transition-colors">
+              Book Call
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="relative pt-24 pb-20 overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="col-span-12 lg:col-span-5 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6 w-fit">
+                  <span class="text-[10px] uppercase tracking-widest text-blue-400 font-bold">Next-Gen AI Systems</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6 text-white">
+                  We Build AI That <span class="text-blue-500">Grows Revenue.</span>
+                </h1>
+                <p class="text-slate-400 text-lg leading-relaxed mb-8 max-w-sm">
+                  Automate operations, engage leads, and scale faster with custom LLM agents and intelligent automation.
+                </p>
+                <div class="flex gap-4 pt-4">
+                  <button class="px-6 py-3 bg-white text-black font-bold rounded-xl text-sm">Free AI Audit</button>
+                  <button class="px-6 py-3 bg-slate-800 text-white font-bold rounded-xl border border-white/10 text-sm">Book a Call</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-12 border-y border-white/5 bg-white/2">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">100+</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-tighter font-bold">Clients Helped</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">500+</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-tighter font-bold">Automations</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">20k+</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-tighter font-bold">Hours Saved</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">$4.5M+</div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-tighter font-bold">Revenue</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-24 bg-[#0B0E14] relative">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16">
+              <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 tracking-tight text-white">The Cost of <span class="text-red-500">Ignoring</span> AI.</h2>
+              <p class="text-slate-400 text-lg leading-relaxed max-w-xl">In 2026, you either leverage AI automation, or you watch your competitors drive your acquisition costs into the ground.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="p-8 rounded-2xl bg-white/5 border border-white/5 transition-all group">
+                <h3 class="text-lg font-bold mb-3 text-white uppercase tracking-tight">Wasted Hours</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">Highly paid teams stuck handling routine emails, data entry, and manual scheduling.</p>
+              </div>
+              <div class="p-8 rounded-2xl bg-white/5 border border-white/5 transition-all group">
+                <h3 class="text-lg font-bold mb-3 text-white uppercase tracking-tight">Lost Revenue</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">Human response times are too slow. 78% of customers buy from the first responder.</p>
+              </div>
+              <div class="p-8 rounded-2xl bg-white/5 border border-white/5 transition-all group">
+                <h3 class="text-lg font-bold mb-3 text-white uppercase tracking-tight">Zero Scale</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">Manual growth is linear. AI allows for exponential scale without increasing headcount.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="py-24 relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+              <h2 class="text-4xl lg:text-6xl font-bold mb-6 text-white">Our Core <span class="text-blue-500">AI Powered</span> Services</h2>
+              <p class="max-w-2xl mx-auto text-slate-400 text-lg">We don't just "use" AI—we build custom systems designed to solve your specific business bottlenecks and fuel aggressive growth.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                <h3 class="text-xl font-bold text-white mb-3 tracking-tight uppercase">AI Automation</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">We connect your tech stack and build logic that runs your business while you sleep.</p>
+                <div class="pt-6 border-t border-white/5 flex flex-col space-y-1">
+                  <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Target ROI</span>
+                  <span class="text-[11px] font-bold text-blue-400 uppercase tracking-widest">Eliminate 40% of manual repetitive tasks.</span>
+                </div>
+              </div>
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                <h3 class="text-xl font-bold text-white mb-3 tracking-tight uppercase">AI Chatbots</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">Custom intelligent assistants trained on your data to handle sales and customer support 24/7.</p>
+                <div class="pt-6 border-t border-white/5 flex flex-col space-y-1">
+                  <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Target ROI</span>
+                  <span class="text-[11px] font-bold text-blue-400 uppercase tracking-widest">Instant response time, 2.5x more leads.</span>
+                </div>
+              </div>
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group">
+                <h3 class="text-xl font-bold text-white mb-3 tracking-tight uppercase">AI Voice Agents</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">Human-like voice systems for outbound cold calling, inbound scheduling, and support.</p>
+                <div class="pt-6 border-t border-white/5 flex flex-col space-y-1">
+                  <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Target ROI</span>
+                  <span class="text-[11px] font-bold text-blue-400 uppercase tracking-widest">Scale call volume without hiring agents.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="py-24 bg-[#0B0E14] relative z-10">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+              <div class="lg:col-span-4 text-center lg:text-left">
+                <h2 class="text-4xl font-extrabold mb-6 tracking-tight text-white">Our 3-Step Success Loop</h2>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">We've refined a process that delivers ROI-positive AI systems in record time.</p>
+                <button class="px-6 py-3 bg-white text-black font-bold rounded-xl text-xs uppercase tracking-widest">Start Your Audit</button>
+              </div>
+              <div class="lg:col-span-8 flex flex-col gap-4">
+                <div class="flex flex-col p-6 rounded-2xl border bg-white/10 border-blue-500/40 shadow-[0_0_20px_rgba(37,99,235,0.1)]">
+                  <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-1">01. The AI Audit</h3>
+                  <p class="text-[11px] text-slate-500 max-w-md">Deep analysis of your data and workflows to find high-ROI bottlenecks.</p>
+                </div>
+                <div class="flex flex-col p-6 rounded-2xl border bg-white/5 border-white/5">
+                  <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-1">02. Build & Deploy</h3>
+                  <p class="text-[11px] text-slate-500 max-w-md">Custom agent construction and deployment into your existing stack.</p>
+                </div>
+                <div class="flex flex-col p-6 rounded-2xl border bg-white/5 border-white/5">
+                  <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-1">03. Scale & Optimize</h3>
+                  <p class="text-[11px] text-slate-500 max-w-md">Continuous monitoring and prompt refinement to handle growth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="results" class="py-24 bg-[#0B0E14]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl lg:text-6xl font-extrabold tracking-tight uppercase text-white">Measurable Business Outcomes.</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                <h3 class="text-xl font-bold text-white uppercase tracking-tight">+42% Conversion</h3>
+                <p class="text-sm text-slate-400 mb-8">Fixed high cart abandonment by deploying 24/7 AI recovery agents and personalized logic.</p>
+              </div>
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                <h3 class="text-xl font-bold text-white uppercase tracking-tight">$120k Pipeline</h3>
+                <p class="text-sm text-slate-400 mb-8">Streamlined inbound lead capture with intent-based AI qualification and instant booking.</p>
+              </div>
+              <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                <h3 class="text-xl font-bold text-white uppercase tracking-tight">70% More Bookings</h3>
+                <p class="text-sm text-slate-400 mb-8">Automated after-hours scheduling and patient follow-ups via human-like AI Voice agents.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-white">Common Questions</h2>
+            <p class="text-slate-400 text-lg">Everything you need to know about scaling with AI.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="p-6 rounded-2xl border border-white/5 bg-white/2">
+              <h3 class="text-lg font-bold text-white uppercase tracking-tight text-sm mb-2">What exactly is AI automation?</h3>
+              <p class="text-slate-400">AI automation is the process of using artificial intelligence to handle repetitive business tasks.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-white/5 bg-white/2">
+              <h3 class="text-lg font-bold text-white uppercase tracking-tight text-sm mb-2">How much does a custom AI chatbot cost?</h3>
+              <p class="text-slate-400">Pricing varies based on complexity and integration requirements.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-7xl mx-auto bg-blue-600/10 border border-white/10 rounded-[2rem] p-12 text-center lg:text-left shadow-2xl">
+            <h2 class="text-4xl lg:text-7xl font-extrabold text-white mb-8 tracking-tight">Ready to AI-Proof Your Brand?</h2>
+            <p class="text-slate-400 text-lg lg:text-xl mb-12 max-w-2xl">The window for adoption is closing. Secure your competitive advantage today.</p>
+            <button class="px-10 py-6 bg-white text-black font-black rounded-2xl text-sm uppercase tracking-widest shadow-2xl">Book Your Discovery Call</button>
+          </div>
+        </section>
+
+        <footer class="py-12 border-t border-white/5 bg-[#0B0E14]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">© 2026 AI Pro Consultants. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
