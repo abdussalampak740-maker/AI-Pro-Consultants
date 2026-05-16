@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Bot, User, Sparkles, Loader2, ArrowUpRight, Copy, Trash2, Check, Brain } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
-import { useModal } from '../App.tsx';
+import { useModal } from '../context/ModalContext.tsx';
 
 interface Message {
   role: 'user' | 'bot';

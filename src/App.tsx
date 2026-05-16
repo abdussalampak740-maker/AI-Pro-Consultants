@@ -30,10 +30,9 @@ import FAQ from './components/FAQ.tsx';
 import Footer from './components/Footer.tsx';
 import AuditModal from './components/AuditModal.tsx';
 import ChatBot from './components/ChatBot.tsx';
+import { BlogIndex, BlogPost } from './components/Blog.tsx';
 
-// --- Context for Modal ---
-const ModalContext = createContext<{ openAudit: () => void }>({ openAudit: () => {} });
-export const useModal = () => useContext(ModalContext);
+import { ModalContext, useModal } from './context/ModalContext.tsx';
 
 /**
  * @license
@@ -581,6 +580,71 @@ const Resources = () => (
 
 export default function App() {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    // Listen to browser navigation buttons
+    window.addEventListener('popstate', handleLocationChange);
+
+    // Support SPA navigation tracking-interceptor
+    const originalPushState = window.history.pushState;
+    window.history.pushState = function (...args) {
+      originalPushState.apply(this, args);
+      handleLocationChange();
+    };
+
+    const originalReplaceState = window.history.replaceState;
+    window.history.replaceState = function (...args) {
+      originalReplaceState.apply(this, args);
+      handleLocationChange();
+    };
+
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.history.pushState = originalPushState;
+      window.history.replaceState = originalReplaceState;
+    };
+  }, []);
+
+  // Intercept standard <a> tags on '/blog/' or '/' to keep transitions super smooth!
+  useEffect(() => {
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a');
+      if (!target) return;
+      
+      const href = target.getAttribute('href');
+      if (href) {
+        if (href.startsWith('/blog/')) {
+          e.preventDefault();
+          window.history.pushState(null, '', href);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (href === '/') {
+          e.preventDefault();
+          window.history.pushState(null, '', '/');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (href.startsWith('#')) {
+          // If viewing blog, navigate back to home grid with hash
+          if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+            e.preventDefault();
+            window.history.pushState(null, '', '/' + href);
+            setTimeout(() => {
+              const el = document.getElementById(href.substring(1));
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 150);
+          }
+        }
+      }
+    };
+
+    window.addEventListener('click', handleGlobalClick);
+    return () => {
+      window.removeEventListener('click', handleGlobalClick);
+    };
+  }, []);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -591,10 +655,31 @@ export default function App() {
     }
   }, []);
 
-  return (
-    <ModalContext.Provider value={{ openAudit: () => setIsAuditOpen(true) }}>
-      <div className="min-h-screen">
-        <Navbar />
+  const navigate = (path: string) => {
+    window.history.pushState(null, '', path);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const isBlogGrid = currentPath === '/blog' || currentPath === '/blog/' || currentPath === '/blog/index.html';
+  const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
+
+  const renderView = () => {
+    if (isBlogGrid) {
+      return (
+        <BlogIndex onNavigate={navigate} openAudit={() => setIsAuditOpen(true)} />
+      );
+    }
+
+    if (isBlogPost) {
+      const rawSlug = currentPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+      return (
+        <BlogPost slug={rawSlug} onNavigate={navigate} openAudit={() => setIsAuditOpen(true)} />
+      );
+    }
+
+    // Default Home Setup
+    return (
+      <>
         <Hero />
         <SocialProof />
         <Problem />
@@ -604,6 +689,17 @@ export default function App() {
         <FAQ />
         <FinalCTA />
         <Resources />
+      </>
+    );
+  };
+
+  return (
+    <ModalContext.Provider value={{ openAudit: () => setIsAuditOpen(true) }}>
+      <div className="min-h-screen">
+        <Navbar />
+        
+        {renderView()}
+        
         <Footer />
         
         <AuditModal isOpen={isAuditOpen} onClose={() => setIsAuditOpen(false)} />

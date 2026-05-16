@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Bot, Sparkles, ChevronRight, Play } from 'lucide-react';
-import { useModal } from '../App.tsx';
+import { useModal } from '../context/ModalContext.tsx';
 
 export default function Hero() {
   const { openAudit } = useModal();
