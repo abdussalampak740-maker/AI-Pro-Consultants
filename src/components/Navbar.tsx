@@ -11,8 +11,8 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-dark border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-3">
-            <div className="relative group">
+          <a href="/" className="flex items-center gap-3 group cursor-pointer no-underline">
+            <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative w-10 h-10 rounded-lg bg-[#0B0E14] border border-white/10 flex items-center justify-center">
                 <Brain className="w-6 h-6 text-blue-500" />
@@ -26,7 +26,7 @@ export default function Navbar() {
                 Consultants
               </span>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">

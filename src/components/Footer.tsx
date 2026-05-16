@@ -8,9 +8,9 @@ export default function Footer() {
           
           {/* Column 1: Brand details */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                <Brain className="w-5 h-5 text-blue-500" />
+            <a href="/" className="flex items-center gap-3 group cursor-pointer no-underline">
+              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 group-hover:border-blue-500/40 flex items-center justify-center transition-colors">
+                <Brain className="w-5 h-5 text-blue-500 group-hover:scale-105 transition-transform" />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-black font-display tracking-tighter text-white">
@@ -20,7 +20,7 @@ export default function Footer() {
                   Consultants
                 </span>
               </div>
-            </div>
+            </a>
             <p className="text-xs text-slate-500 leading-relaxed max-w-sm">
               We engineer secure, bespoke LLM chatbots, voice interfaces, and automatic workflow pipelines designed to save hours, capture leads, and protect margins.
             </p>
