@@ -578,9 +578,149 @@ const Resources = () => (
   </section>
 );
 
+interface PageMeta {
+  title: string;
+  description: string;
+  keywords: string;
+  url: string;
+  ogType: string;
+}
+
+const META_MAP: Record<string, PageMeta> = {
+  '/': {
+    title: 'AI Pro Consultants | Premium AI Automation Agency & LLM Solutions',
+    description: 'AI Pro Consultants specializes in bespoke AI automation, voice agents, and custom LLM chatbots. We build high-ROI AI systems for B2B, Healthcare, and E-commerce brands.',
+    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI Pro Consultants',
+    url: 'https://www.aiproconsultants.com/',
+    ogType: 'website'
+  },
+  '/index.html': {
+    title: 'AI Pro Consultants | Premium AI Automation Agency & LLM Solutions',
+    description: 'AI Pro Consultants specializes in bespoke AI automation, voice agents, and custom LLM chatbots. We build high-ROI AI systems for B2B, Healthcare, and E-commerce brands.',
+    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI Pro Consultants',
+    url: 'https://www.aiproconsultants.com/',
+    ogType: 'website'
+  },
+  '/blog': {
+    title: 'Blog — AI Automation Insights | AI Pro Consultants',
+    description: 'Expert guides on AI automation, chatbots, and voice agents for US businesses. City-specific AI automation resources for Texas, Florida, and beyond.',
+    keywords: 'AI automation blog, Texas AI agency, business AI solutions, AI consulting, custom LLM guide',
+    url: 'https://www.aiproconsultants.com/blog/',
+    ogType: 'website'
+  },
+  '/blog/': {
+    title: 'Blog — AI Automation Insights | AI Pro Consultants',
+    description: 'Expert guides on AI automation, chatbots, and voice agents for US businesses. City-specific AI automation resources for Texas, Florida, and beyond.',
+    keywords: 'AI automation blog, Texas AI agency, business AI solutions, AI consulting, custom LLM guide',
+    url: 'https://www.aiproconsultants.com/blog/',
+    ogType: 'website'
+  },
+  '/blog/index.html': {
+    title: 'Blog — AI Automation Insights | AI Pro Consultants',
+    description: 'Expert guides on AI automation, chatbots, and voice agents for US businesses. City-specific AI automation resources for Texas, Florida, and beyond.',
+    keywords: 'AI automation blog, Texas AI agency, business AI solutions, AI consulting, custom LLM guide',
+    url: 'https://www.aiproconsultants.com/blog/',
+    ogType: 'website'
+  },
+  'ai-automation-texas': {
+    title: 'AI Automation Texas | Premium Custom LLMs & Voice Agents | AI Pro Consultants',
+    description: 'Looking for expert AI automation Texas solutions? AI Pro Consultants implements custom LLM chatbots and voice agents. Book a free consultation today!',
+    keywords: 'AI automation Texas, Texas AI agency, business AI solutions, custom LLM guide, AI voice agents Texas, Austin AI, Houston AI, Dallas AI, San Antonio AI',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-texas/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-austin-tx': {
+    title: 'AI Automation Agency in Austin, TX | AI Pro Consultants',
+    description: 'Looking for an AI automation agency in Austin, TX? AI Pro Consultants helps Silicon Hills startups and B2B brands scale lead qualification and workflow automation.',
+    keywords: 'AI automation agency Austin, Austin AI consulting, Silicon Hills AI, lead qualification automation, workflow automation Austin TX',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-austin-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-dallas-tx': {
+    title: 'AI Automation Agency in Dallas, TX | AI Pro Consultants',
+    description: 'Looking for an AI automation agency in Dallas, TX? AI Pro Consultants helps North Texas B2B, logistics, and healthcare firms scale operations and workflows.',
+    keywords: 'AI automation agency Dallas, Dallas AI consulting, North Texas AI workflow, logistics AI automation, business automation Dallas TX',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-dallas-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-houston-tx': {
+    title: 'AI Automation Agency in Houston, TX | AI Pro Consultants',
+    description: 'Looking for an AI automation agency in Houston, TX? AI Pro Consultants helps Houston energy, medical, and maritime companies automate complex workflows.',
+    keywords: 'AI automation agency Houston, Houston AI consulting, medical workflow automation Houston, energy AI solutions, invoice automation Houston TX',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-houston-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-san-antonio-tx': {
+    title: 'AI Automation Agency in San Antonio, TX | AI Pro Consultants',
+    description: 'Looking for an AI automation agency in San Antonio, TX? AI Pro Consultants helps hospitality, medical, and defense-adjacent businesses automate tasks and scale operations.',
+    keywords: 'AI automation agency San Antonio, San Antonio AI consulting, HIPAA secure scheduling AI, JBSA military AI tools, hospitality AI chatbots San Antonio',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-san-antonio-tx/',
+    ogType: 'article'
+  }
+};
+
 export default function App() {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    // Dynamic SEO Metadata Sync for Client-side SPA navigation
+    let meta = META_MAP[currentPath];
+    
+    // Fallback if checked route is nested blog sub-slug
+    if (!meta && currentPath.startsWith('/blog/')) {
+      const rawSlug = currentPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+      meta = META_MAP[rawSlug];
+    }
+    
+    // Default fallback to Home
+    if (!meta) {
+      meta = META_MAP['/'];
+    }
+
+    if (meta) {
+      document.title = meta.title;
+      
+      const updateMetaTag = (selector: string, attribute: 'content' | 'href', value: string) => {
+        let element = document.querySelector(selector);
+        if (!element) {
+          if (selector.startsWith('meta[')) {
+            element = document.createElement('meta');
+            const matchName = selector.match(/name="([^"]+)"/);
+            const matchProperty = selector.match(/property="([^"]+)"/);
+            if (matchName) {
+              element.setAttribute('name', matchName[1]);
+            } else if (matchProperty) {
+              element.setAttribute('property', matchProperty[1]);
+            }
+            document.head.appendChild(element);
+          } else if (selector.startsWith('link[')) {
+            element = document.createElement('link');
+            const matchRel = selector.match(/rel="([^"]+)"/);
+            if (matchRel) {
+              element.setAttribute('rel', matchRel[1]);
+            }
+            document.head.appendChild(element);
+          }
+        }
+        if (element) {
+          element.setAttribute(attribute, value);
+        }
+      };
+
+      updateMetaTag('meta[name="title"]', 'content', meta.title);
+      updateMetaTag('meta[name="description"]', 'content', meta.description);
+      updateMetaTag('meta[name="keywords"]', 'content', meta.keywords);
+      updateMetaTag('link[rel="canonical"]', 'href', meta.url);
+      updateMetaTag('meta[property="og:title"]', 'content', meta.title);
+      updateMetaTag('meta[property="og:description"]', 'content', meta.description);
+      updateMetaTag('meta[property="og:url"]', 'content', meta.url);
+      updateMetaTag('meta[property="og:type"]', 'content', meta.ogType);
+      updateMetaTag('meta[property="twitter:title"]', 'content', meta.title);
+      updateMetaTag('meta[property="twitter:description"]', 'content', meta.description);
+      updateMetaTag('meta[property="twitter:url"]', 'content', meta.url);
+    }
+  }, [currentPath]);
 
   useEffect(() => {
     const handleLocationChange = () => {
