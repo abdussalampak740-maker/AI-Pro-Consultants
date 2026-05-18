@@ -667,7 +667,7 @@ const META_MAP: Record<string, PageMeta> = {
     ogType: 'website'
   },
   'ai-automation-texas': {
-    title: 'AI Automation Texas | Premium Custom LLMs & Voice Agents | AI Pro Consultants',
+    title: 'AI Automation Agency Texas | AI Pro Consultants',
     description: 'Looking for expert AI automation Texas solutions? AI Pro Consultants implements custom LLM chatbots and voice agents. Book a free consultation today!',
     keywords: 'AI automation Texas, Texas AI agency, business AI solutions, custom LLM guide, AI voice agents Texas, Austin AI, Houston AI, Dallas AI, San Antonio AI',
     url: 'https://www.aiproconsultants.com/blog/ai-automation-texas/',
