@@ -5,11 +5,11 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "What exactly is AI automation?",
-    answer: "AI automation is the process of using artificial intelligence to handle repetitive business tasks—like data entry, lead qualifying, meeting scheduling, or customer support—freeing up your team for high-value strategic work."
+    answer: "AI automation uses artificial intelligence to handle repetitive business tasks — like lead qualification, customer follow-ups, scheduling, and data entry — without human involvement. We build custom systems that run these workflows 24/7, cutting costs and response times simultaneously."
   },
   {
     question: "How much does a custom AI chatbot cost?",
-    answer: "Pricing varies based on complexity and integration requirements. We offer everything from simple customer support bots to complex systems integrated with your CRM and backend databases. Book a call for a custom quote."
+    answer: "Most custom LLM chatbot projects range from $2,500 to $8,000 depending on complexity, integrations, and training data requirements. We start with a free AI Audit to scope your exact needs before any pricing discussion."
   },
   {
     question: "What is an AI voice agent?",

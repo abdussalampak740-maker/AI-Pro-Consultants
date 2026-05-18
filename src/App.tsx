@@ -578,6 +578,50 @@ const Resources = () => (
   </section>
 );
 
+const BlogPreview = () => (
+  <section className="py-24 border-t border-white/5 bg-[#0B0E14]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center lg:text-left mb-12">
+        <h2 className="text-3xl font-bold text-white mb-4 uppercase tracking-widest">From Our Blog</h2>
+        <p className="text-slate-400 text-lg">City-specific AI automation guides for US businesses</p>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          {
+            badge: "Texas",
+            title: "AI Automation for Texas Businesses",
+            link: "/blog/ai-automation-texas/",
+            desc: "A comprehensive state-wide strategy for implementing high-ROI AI automation systems."
+          },
+          {
+            badge: "Austin, TX",
+            title: "AI Automation Agency in Austin, TX",
+            link: "/blog/ai-automation-agency-austin-tx/",
+            desc: "Accelerating Silicon Hills startups with custom lead qualification and backend AI workflows."
+          },
+          {
+            badge: "Dallas, TX",
+            title: "AI Automation Agency in Dallas, TX",
+            link: "/blog/ai-automation-agency-dallas-tx/",
+            desc: "Modernizing North Texas enterprise operations via secure LLM frameworks and logistics agents."
+          }
+        ].map((guide, i) => (
+          <a key={i} href={guide.link} className="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+            <div className="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+              <span className="text-[10px] uppercase tracking-widest text-blue-400 font-bold">{guide.badge}</span>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors uppercase tracking-tight">{guide.title}</h3>
+            <p className="text-xs text-slate-500 leading-relaxed mb-6">{guide.desc}</p>
+            <div className="flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
+              Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 interface PageMeta {
   title: string;
   description: string;
@@ -829,6 +873,7 @@ export default function App() {
         <FAQ />
         <FinalCTA />
         <Resources />
+        <BlogPreview />
       </>
     );
   };
