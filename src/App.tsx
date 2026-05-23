@@ -700,6 +700,55 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'AI automation agency San Antonio, San Antonio AI consulting, HIPAA secure scheduling AI, JBSA military AI tools, hospitality AI chatbots San Antonio',
     url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-san-antonio-tx/',
     ogType: 'article'
+  },
+  'ai-automation-agency-fort-worth-tx': {
+    title: 'AI Automation Agency in Fort Worth, TX | AI Pro Consultants',
+    description: 'AI Pro Consultants builds custom AI automation, chatbots & voice agents for Fort Worth businesses. Book your free AI audit today.',
+    keywords: 'AI automation agency Fort Worth, AI chatbot Fort Worth TX, AI voice agents Fort Worth, business automation Fort Worth, Fort Worth AI agency',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-fort-worth-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-el-paso-tx': {
+    title: 'AI Automation Agency in El Paso, TX | AI Pro Consultants',
+    description: 'Custom AI automation, chatbots & voice agents for El Paso businesses. AI Pro Consultants helps border city brands scale. Book a free AI audit.',
+    keywords: 'AI automation agency El Paso, AI chatbot El Paso TX, AI voice agents El Paso, business automation El Paso, El Paso AI solutions',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-el-paso-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-arlington-tx': {
+    title: 'AI Automation Agency in Arlington, TX | AI Pro Consultants',
+    description: 'AI Pro Consultants delivers custom AI automation & chatbots for Arlington, TX businesses. Between Dallas & Fort Worth — book your free AI audit.',
+    keywords: 'AI automation agency Arlington TX, AI chatbot Arlington Texas, business automation Arlington TX, AI voice agents Arlington, Arlington Texas AI agency',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-arlington-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-corpus-christi-tx': {
+    title: 'AI Automation Agency in Corpus Christi, TX | AI Pro Consultants',
+    description: 'Custom AI automation, voice agents & chatbots for Corpus Christi businesses. AI Pro Consultants serves South Texas. Book a free audit.',
+    keywords: 'AI automation agency Corpus Christi, AI chatbot Corpus Christi TX, business automation Corpus Christi, AI solutions South Texas',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-corpus-christi-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-plano-tx': {
+    title: 'AI Automation Agency in Plano, TX | AI Pro Consultants',
+    description: 'AI Pro Consultants builds custom AI automation & chatbots for Plano, TX businesses. Corporate HQ city meets AI. Book your free audit.',
+    keywords: 'AI automation agency Plano TX, AI chatbot Plano Texas, business automation Plano, AI agency Plano TX, AI solutions Plano',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-plano-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-lubbock-tx': {
+    title: 'AI Automation Agency in Lubbock, TX | AI Pro Consultants',
+    description: 'Custom AI automation, chatbots & voice agents for Lubbock businesses. AI Pro Consultants serves West Texas. Book a free AI audit today.',
+    keywords: 'AI automation agency Lubbock TX, AI chatbot Lubbock, business automation Lubbock Texas, AI solutions West Texas, Lubbock AI agency',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-lubbock-tx/',
+    ogType: 'article'
+  },
+  'ai-automation-agency-amarillo-tx': {
+    title: 'AI Automation Agency in Amarillo, TX | AI Pro Consultants',
+    description: 'AI Pro Consultants delivers custom AI automation & chatbots for Amarillo, TX businesses. Serving the Texas Panhandle. Book a free AI audit.',
+    keywords: 'AI automation agency Amarillo TX, AI chatbot Amarillo, business automation Amarillo Texas, AI solutions Texas Panhandle',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-amarillo-tx/',
+    ogType: 'article'
   }
 };
 

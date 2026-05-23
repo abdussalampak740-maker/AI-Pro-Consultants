@@ -68,13 +68,34 @@ export default function Footer() {
                 <a href="/blog/ai-automation-texas/" className="hover:text-blue-400 transition-colors">AI Automation Texas</a>
               </li>
               <li>
+                <a href="/blog/ai-automation-agency-amarillo-tx/" className="hover:text-blue-400 transition-colors">AI Automation Amarillo</a>
+              </li>
+              <li>
                 <a href="/blog/ai-automation-agency-austin-tx/" className="hover:text-blue-400 transition-colors">AI Automation Austin</a>
+              </li>
+              <li>
+                <a href="/blog/ai-automation-agency-arlington-tx/" className="hover:text-blue-400 transition-colors">AI Automation Arlington</a>
+              </li>
+              <li>
+                <a href="/blog/ai-automation-agency-corpus-christi-tx/" className="hover:text-blue-400 transition-colors">AI Automation Corpus Christi</a>
               </li>
               <li>
                 <a href="/blog/ai-automation-agency-dallas-tx/" className="hover:text-blue-400 transition-colors">AI Automation Dallas</a>
               </li>
               <li>
+                <a href="/blog/ai-automation-agency-el-paso-tx/" className="hover:text-blue-400 transition-colors">AI Automation El Paso</a>
+              </li>
+              <li>
+                <a href="/blog/ai-automation-agency-fort-worth-tx/" className="hover:text-blue-400 transition-colors">AI Automation Fort Worth</a>
+              </li>
+              <li>
                 <a href="/blog/ai-automation-agency-houston-tx/" className="hover:text-blue-400 transition-colors">AI Automation Houston</a>
+              </li>
+              <li>
+                <a href="/blog/ai-automation-agency-lubbock-tx/" className="hover:text-blue-400 transition-colors">AI Automation Lubbock</a>
+              </li>
+              <li>
+                <a href="/blog/ai-automation-agency-plano-tx/" className="hover:text-blue-400 transition-colors">AI Automation Plano</a>
               </li>
               <li>
                 <a href="/blog/ai-automation-agency-san-antonio-tx/" className="hover:text-blue-400 transition-colors">AI Automation San Antonio</a>
