@@ -749,6 +749,27 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'AI automation agency Amarillo TX, AI chatbot Amarillo, business automation Amarillo Texas, AI solutions Texas Panhandle',
     url: 'https://www.aiproconsultants.com/blog/ai-automation-agency-amarillo-tx/',
     ogType: 'article'
+  },
+  'how-to-automate-business-processes-with-ai': {
+    title: 'How to Automate Business Processes With AI in 2026 | AI Pro Consultants',
+    description: 'Step-by-step guide to automating your business processes with AI. Save 20+ hours/week. Learn how to leverage modern LLMs and workflow platforms.',
+    keywords: 'how to automate business processes with AI, business process automation AI, AI workflow automation guide, automate repetitive tasks AI',
+    url: 'https://www.aiproconsultants.com/blog/how-to-automate-business-processes-with-ai/',
+    ogType: 'article'
+  },
+  'best-ai-tools-for-small-business': {
+    title: '10 Best AI Tools for Small Business in 2026 | AI Pro Consultants',
+    description: 'The top AI tools helping small businesses save time & cut costs in 2026. Vetted list from AI Pro Consultants.',
+    keywords: 'AI tools for small business, best AI tools small business 2026, AI software for small business, affordable AI for business',
+    url: 'https://www.aiproconsultants.com/blog/best-ai-tools-for-small-business/',
+    ogType: 'article'
+  },
+  'ai-chatbot-for-business': {
+    title: 'AI Chatbot for Business: What It Is & How to Build One | AI Pro Consultants',
+    description: 'Everything you need to know about AI chatbots for business in 2026 — types, costs, and how to get one built. By AI Pro Consultants.',
+    keywords: 'AI chatbot for business, custom AI chatbot business, business chatbot 2026, LLM chatbot for company, AI customer support chatbot',
+    url: 'https://www.aiproconsultants.com/blog/ai-chatbot-for-business/',
+    ogType: 'article'
   }
 };
 
