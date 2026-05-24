@@ -770,6 +770,20 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'AI chatbot for business, custom AI chatbot business, business chatbot 2026, LLM chatbot for company, AI customer support chatbot',
     url: 'https://www.aiproconsultants.com/blog/ai-chatbot-for-business/',
     ogType: 'article'
+  },
+  'ai-automation-for-healthcare': {
+    title: 'AI Automation for Healthcare: HIPAA Guide for 2026 | AI Pro Consultants',
+    description: 'How healthcare providers use HIPAA-compliant AI to automate scheduling, billing & patient intake. Guide by AI Pro Consultants.',
+    keywords: 'AI automation for healthcare, healthcare AI automation 2026, HIPAA compliant AI, AI for medical practices, hospital AI automation',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-for-healthcare/',
+    ogType: 'article'
+  },
+  'ai-automation-for-ecommerce': {
+    title: 'AI Automation for E-commerce: Scale Without Hiring in 2026 | AI Pro Consultants',
+    description: 'Top AI automation strategies for e-commerce businesses in 2026. Cut support costs, boost conversions. By AI Pro Consultants.',
+    keywords: 'AI automation for e-commerce, ecommerce AI tools 2026, AI for online store, automate ecommerce business, AI customer service ecommerce',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-for-ecommerce/',
+    ogType: 'article'
   }
 };
 
