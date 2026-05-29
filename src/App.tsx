@@ -784,6 +784,13 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'AI automation for e-commerce, ecommerce AI tools 2026, AI for online store, automate ecommerce business, AI customer service ecommerce',
     url: 'https://www.aiproconsultants.com/blog/ai-automation-for-ecommerce/',
     ogType: 'article'
+  },
+  'cost-of-ai-automation-small-business': {
+    title: 'How Much Does AI Automation Cost? (2026 Pricing Guide) | AI Pro Consultants',
+    description: 'Real 2026 pricing for AI automation, chatbots, and voice agents for small businesses. See what drives costs and what ROI to expect.',
+    keywords: 'cost of AI automation small business, AI automation pricing, how much does AI chatbot cost, workflow automation cost',
+    url: 'https://www.aiproconsultants.com/blog/cost-of-ai-automation-small-business/',
+    ogType: 'article'
   }
 };
 
