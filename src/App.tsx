@@ -791,6 +791,20 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'cost of AI automation small business, AI automation pricing, how much does AI chatbot cost, workflow automation cost',
     url: 'https://www.aiproconsultants.com/blog/cost-of-ai-automation-small-business/',
     ogType: 'article'
+  },
+  'does-my-business-need-ai-automation': {
+    title: '5 Signs Your Business Needs AI Automation Now | AI Pro Consultants',
+    description: 'If your team is drowning in repetitive tasks or losing leads to slow response times, these 5 signs mean it\'s time for AI automation.',
+    keywords: 'does my business need AI automation, when to use AI automation, business automation signs, is AI automation right for my business',
+    url: 'https://www.aiproconsultants.com/blog/does-my-business-need-ai-automation/',
+    ogType: 'article'
+  },
+  '5-signs-your-business-needs-ai-automation-right-now': {
+    title: '5 Signs Your Business Needs AI Automation Now | AI Pro Consultants',
+    description: 'If your team is drowning in repetitive tasks or losing leads to slow response times, these 5 signs mean it\'s time for AI automation.',
+    keywords: 'does my business need AI automation, when to use AI automation, business automation signs, is AI automation right for my business',
+    url: 'https://www.aiproconsultants.com/blog/5-signs-your-business-needs-ai-automation-right-now/',
+    ogType: 'article'
   }
 };
 
