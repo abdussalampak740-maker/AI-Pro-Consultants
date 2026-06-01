@@ -805,6 +805,27 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'does my business need AI automation, when to use AI automation, business automation signs, is AI automation right for my business',
     url: 'https://www.aiproconsultants.com/blog/5-signs-your-business-needs-ai-automation-right-now/',
     ogType: 'article'
+  },
+  'ai-chatbots-vs-human-support': {
+    title: 'AI Chatbots vs Human Support: Which Is Better?',
+    description: 'Comparing AI chatbots and human customer support in 2026. Costs, response times, and which option actually grows your business faster.',
+    keywords: 'AI chatbot vs human customer support, should I use AI chatbot for customer service, AI vs human support cost, chatbot for small business',
+    url: 'https://www.aiproconsultants.com/blog/ai-chatbots-vs-human-support/',
+    ogType: 'article'
+  },
+  'ai-tools-real-estate-texas': {
+    title: 'Best AI Tools for Texas Real Estate Agents 2026',
+    description: 'The best AI tools and automation systems for Texas real estate agents in 2026. Cut follow-up time, qualify leads faster, and close more deals.',
+    keywords: 'AI tools real estate Texas, AI automation real estate agent, real estate chatbot Texas, automate real estate follow up',
+    url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
+    ogType: 'article'
+  },
+  'ai-tools-real-estate-texas.html': {
+    title: 'Best AI Tools for Texas Real Estate Agents 2026',
+    description: 'The best AI tools and automation systems for Texas real estate agents in 2026. Cut follow-up time, qualify leads faster, and close more deals.',
+    keywords: 'AI tools real estate Texas, AI automation real estate agent, real estate chatbot Texas, automate real estate follow up',
+    url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
+    ogType: 'article'
   }
 };
 
