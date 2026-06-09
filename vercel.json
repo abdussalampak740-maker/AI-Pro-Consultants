@@ -1,0 +1,35 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/5-signs-your-business-needs-ai-automation-right-now.html",
+      "destination": "/blog/5-signs-your-business-needs-ai-automation-right-now/",
+      "permanent": true
+    },
+    {
+      "source": "/5-signs-your-business-needs-ai-automation-right-now",
+      "destination": "/blog/5-signs-your-business-needs-ai-automation-right-now/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbots-vs-human-support.html",
+      "destination": "/blog/ai-chatbots-vs-human-support/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbots-vs-human-support",
+      "destination": "/blog/ai-chatbots-vs-human-support/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-tools-real-estate-texas.html",
+      "destination": "/blog/ai-tools-real-estate-texas/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-tools-real-estate-texas",
+      "destination": "/blog/ai-tools-real-estate-texas/",
+      "permanent": true
+    }
+  ]
+}
