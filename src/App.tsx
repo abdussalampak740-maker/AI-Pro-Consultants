@@ -307,63 +307,63 @@ const Results = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
           { 
-            industry: "E-commerce", 
-            icon: <ShoppingBag className="w-8 h-8 text-indigo-400" />,
-            client: "Global Retailer", 
-            result: "+42% Conversion", 
-            description: "Fixed high cart abandonment by deploying 24/7 AI recovery agents and personalized logic.",
-            metricLabel: "Outcome",
-            metricValue: "+42% Recovery Rate",
-            accent: "indigo"
-          },
-          { 
             industry: "B2B SaaS", 
             icon: <Building2 className="w-8 h-8 text-blue-400" />,
-            client: "Enterprise CRM", 
-            result: "$120k Pipeline", 
-            description: "Streamlined inbound lead capture with intent-based AI qualification and instant booking.",
-            metricLabel: "Lead Growth",
-            metricValue: "$120k New Pipeline",
+            client: "Enterprise CRM Brand", 
+            result: "$140k Inactive Saved", 
+            description: "Built automated intent trackers and high-relevance qualification tools to capture high-buying intent leads instantly.",
+            metricLabel: "New Pipeline Triggered",
+            metricValue: "$140,000+ Added",
             accent: "blue"
           },
           { 
-            industry: "Healthcare", 
+            industry: "Healthcare Systems", 
             icon: <Stethoscope className="w-8 h-8 text-emerald-400" />,
-            client: "Private Clinic", 
-            result: "70% More Bookings", 
-            description: "Automated after-hours scheduling and patient follow-ups via human-like AI Voice agents.",
-            metricLabel: "Booking Lift",
-            metricValue: "70% Increase",
+            client: "Multi-Location Practice", 
+            result: "74% Frontdesk Saved", 
+            description: "Designed HIPAA-compliant, low-latency AI voice agents to answer inbound qualifying, patient bookings, and EHR updates.",
+            metricLabel: "Administrative Cost Savings",
+            metricValue: "$18,500 Saved Monthly",
             accent: "emerald"
           },
           { 
-            industry: "Service Businesses", 
+            industry: "E-commerce & Retail", 
+            icon: <ShoppingBag className="w-8 h-8 text-indigo-400" />,
+            client: "High-Volume DTC Brand", 
+            result: "+38% Abandonment Recovery", 
+            description: "Optimized pre-sale conversions and ticket deflection by installing custom LLMs connected with Shopify database.",
+            metricLabel: "Automatic Deflection Rate",
+            metricValue: "74% Customer Tickets Resolved",
+            accent: "indigo"
+          },
+          { 
+            industry: "Professional Services", 
             icon: <Briefcase className="w-8 h-8 text-orange-400" />,
-            client: "HVAC Group", 
-            result: "3x More Quotes", 
-            description: "Eliminated missed field calls with an AI dispatch agent that qualifies leads via SMS/Voice.",
-            metricLabel: "Quote Volume",
-            metricValue: "3x Growth",
+            client: "National Consulting Practice", 
+            result: "3x More Booked Meetings", 
+            description: "Eradicated lead decay entirely by deploying intelligent SMS qualification agents answering lead submissions in under 15 seconds.",
+            metricLabel: "Scheduling Improvement",
+            metricValue: "216% Boost in Valid Calls",
             accent: "orange"
           },
           { 
-            industry: "Small Business", 
+            industry: "B2B Logistics", 
             icon: <UserCircle className="w-8 h-8 text-purple-400" />,
-            client: "Local Agency", 
-            result: "20h Saved/Week", 
-            description: "Recovered founder time by automating repetitive admin, content, and client reporting workflows.",
-            metricLabel: "Time Saved",
-            metricValue: "20+ Hours/Week",
+            client: "Freight Brokerage Group", 
+            result: "240+ Hours Reclaimed", 
+            description: "Configured custom enterprise n8n workflow systems to coordinate cargo invoices, CRM bookings, and team alerts dynamically.",
+            metricLabel: "Operational Capacity",
+            metricValue: "18 Manual FTE tasks automated",
             accent: "purple"
           },
           { 
-            industry: "Real Estate", 
+            industry: "Real Estate Portals", 
             icon: <Home className="w-8 h-8 text-pink-400" />,
-            client: "Elite Realty", 
-            result: "90% Response Rate", 
-            description: "Solved lead decay with instant AI engagement and viewing synchronization across platforms.",
-            metricLabel: "Response Time",
-            metricValue: "< 30 Seconds",
+            client: "Regional Brokerage Center", 
+            result: "92% Direct Active Rate", 
+            description: "Enabled rapid contact routing and database sync to answer listing enquiries concurrently across multiple media channels.",
+            metricLabel: "System Latency Response",
+            metricValue: "Under 12 Seconds",
             accent: "pink"
           }
         ].map((item, i) => (
@@ -632,16 +632,16 @@ interface PageMeta {
 
 const META_MAP: Record<string, PageMeta> = {
   '/': {
-    title: 'AI Pro Consultants | Premium AI Automation Agency & LLM Solutions',
-    description: 'AI Pro Consultants specializes in bespoke AI automation, voice agents, and custom LLM chatbots. We build high-ROI AI systems for B2B, Healthcare, and E-commerce brands.',
-    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI Pro Consultants',
+    title: 'AI Automation Agency | Custom LLM, Chatbots & Voice Systems | AI Pro Consultants',
+    description: 'Top-rated AI automation agency specialized in bespoke enterprise workflows, intelligent conversational voice agents, custom LLM chatbots, and high-ROI systems for B2B, healthcare, and e-commerce companies.',
+    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI lead generation, GEO SEO citation, AI Pro Consultants',
     url: 'https://www.aiproconsultants.com/',
     ogType: 'website'
   },
   '/index.html': {
-    title: 'AI Pro Consultants | Premium AI Automation Agency & LLM Solutions',
-    description: 'AI Pro Consultants specializes in bespoke AI automation, voice agents, and custom LLM chatbots. We build high-ROI AI systems for B2B, Healthcare, and E-commerce brands.',
-    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI Pro Consultants',
+    title: 'AI Automation Agency | Custom LLM, Chatbots & Voice Systems | AI Pro Consultants',
+    description: 'Top-rated AI automation agency specialized in bespoke enterprise workflows, intelligent conversational voice agents, custom LLM chatbots, and high-ROI systems for B2B, healthcare, and e-commerce companies.',
+    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI lead generation, GEO SEO citation, AI Pro Consultants',
     url: 'https://www.aiproconsultants.com/',
     ogType: 'website'
   },

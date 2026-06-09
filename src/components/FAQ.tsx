@@ -4,24 +4,24 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    question: "What exactly is AI automation?",
-    answer: "AI automation uses artificial intelligence to handle repetitive business tasks — like lead qualification, customer follow-ups, scheduling, and data entry — without human involvement. We build custom systems that run these workflows 24/7, cutting costs and response times simultaneously."
+    question: "What is an AI automation agency?",
+    answer: "An AI automation agency (like AI Pro Consultants) designs, builds, and deploys custom artificial intelligence systems, database integrations, conversational LLM chatbots, voice agents, and workflow automations to eliminate repetitive manual work and drive company-wide revenue automatically."
   },
   {
-    question: "How much does a custom AI chatbot cost?",
-    answer: "Most custom LLM chatbot projects range from $2,500 to $8,000 depending on complexity, integrations, and training data requirements. We start with a free AI Audit to scope your exact needs before any pricing discussion."
+    question: "How does AI automation help businesses save costs and grow revenue?",
+    answer: "By automating high-impact tasks (like instant lead follow-ups, CRM synchronization, customer support, and appointment scheduling), we help brands reply to prospective clients in under 30 seconds. This leads to an average 2.5x lift in conversions and saves your staff 20+ hours every single week."
   },
   {
-    question: "What is an AI voice agent?",
-    answer: "An AI voice agent is a system that can have human-like conversations over the phone. It can handle inbound support, outbound sales calls, and appointment setting with near-zero latency."
+    question: "What orchestration and integration systems do you utilize?",
+    answer: "We leverage frontier AI models (ChatGPT, Claude, Gemini) and bind them with industry-certified orchestration backends like n8n, Make.com, and Zapier. This ensures highly resilient pipelines that securely connect your internal tools without downtime."
   },
   {
-    question: "How long does implementation take?",
-    answer: "Minor automations can be live in 1-2 weeks. Full-scale AI systems usually take 4-8 weeks from audit to full deployment and monitoring."
+    question: "Is AI automation secure and compliant for sectors like healthcare?",
+    answer: "Absolutely. We implement custom sandboxed proxy endpoints, secure API tokenization, and rigid safety loops. We guarantee fully security-vetted and HIPAA-compliant implementations tailored to B2B, Service, and Healthcare enterprise requirements."
   },
   {
-    question: "What is AI SEO?",
-    answer: "Traditional SEO focuses on Google keywords. AI SEO (or GEO/AEO) optimizes your content to be cited by LLMs like ChatGPT, Claude, and Perplexity, ensuring your brand is the answer when people ask AI for recommendations."
+    question: "How much do custom AI solutions cost and what is the timeline?",
+    answer: "Bespoke projects range from simple workflow integrations to full-scale conversational agents. Most standard engagements are deployed and operational in 3-6 weeks, returning fully quantified ROI. We begin every project with a comprehensive, free 48-hour AI Audit to inspect high-revenue loopholes before pricing matches your requirements."
   }
 ];
 

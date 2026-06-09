@@ -12,46 +12,52 @@ import {
 
 const services = [
   {
-    title: 'AI Automation',
+    title: 'AI Workflow Automation',
     icon: <Zap className="w-8 h-8 text-blue-400" />,
-    description: 'We connect your tech stack and build logic that runs your business while you sleep.',
-    outcome: 'Eliminate 40% of manual repetitive tasks.',
-    color: 'blue'
+    description: 'We connect your tech stack and build custom automated workflows that run your business operations 24/7.',
+    outcome: 'Save 20+ hours/week & remove manual errors.',
+    href: '/ai-workflow-automation.html',
+    linkText: 'Read Automation Guide'
   },
   {
-    title: 'AI Chatbots',
+    title: 'Custom LLM Chatbots',
     icon: <MessageSquare className="w-8 h-8 text-purple-400" />,
-    description: 'Custom intelligent assistants trained on your data to handle sales and customer support 24/7.',
-    outcome: 'Instant response time, 2.5x more leads.',
-    color: 'purple'
+    description: 'Bespoke intelligent chatbots trained exhaustively on your data profiles to handle sales qualifying and automated customer support.',
+    outcome: 'Instant reply speed, 2.5x higher leads.',
+    href: '/llm-chatbot-development.html',
+    linkText: 'Read Chatbot Guide'
   },
   {
     title: 'AI Voice Agents',
     icon: <Mic className="w-8 h-8 text-pink-400" />,
-    description: 'Human-like voice systems for outbound cold calling, inbound scheduling, and support.',
-    outcome: 'Scale call volume without hiring agents.',
-    color: 'pink'
+    description: 'Ultra-low latency human-like voice systems designed for automated appointment booking, inbound support, and smart calls.',
+    outcome: 'Zero missed lead calls & seamless scheduling.',
+    href: '/ai-voice-agents-guide.html',
+    linkText: 'Read Voice Agent Guide'
   },
   {
-    title: 'AI Social Management',
+    title: 'AI Lead Generation',
     icon: <Share2 className="w-8 h-8 text-indigo-400" />,
-    description: 'Automated content creation, scheduling, and engagement systems for LinkedIn, X, and Instagram.',
-    outcome: 'Consistent multi-channel presence effortlessly.',
-    color: 'indigo'
+    description: 'Automated intent scraping, high-level intelligence prospecting, and hyper-targeted lead routing across b2b platforms.',
+    outcome: 'Eliminate cold outreach drag entirely.',
+    href: '/ai-lead-generation-automation.html',
+    linkText: 'Read Outbound Guide'
   },
   {
-    title: 'AI Content Writing',
+    title: 'AI for E-commerce',
     icon: <PenTool className="w-8 h-8 text-cyan-400" />,
-    description: 'High-quality, fact-checked blog posts and marketing copy that resonates with your brand voice.',
-    outcome: '5x content output with zero fatigue.',
-    color: 'cyan'
+    description: 'Decrease cart abandonment, personalize search recommending, and solve support backlogs with custom retail commerce integrations.',
+    outcome: 'Optimize AOV & support-ticket resolution.',
+    href: '/ecommerce-ai-solutions.html',
+    linkText: 'Read E-commerce Guide'
   },
   {
-    title: 'AI SEO (GEO/LLM)',
+    title: 'AI SEO & GEO Citations',
     icon: <Search className="w-8 h-8 text-emerald-400" />,
-    description: 'Optimizing your brand for traditional Google Search AND new AI Overviews / LLM responses.',
-    outcome: 'Rank where your customers are searching now.',
-    color: 'emerald'
+    description: 'Engineered optimizations to position your business as the #1 citation in AI engines like ChatGPT, Perplexity, and Claude.',
+    outcome: 'Overcome competitor digital footprint.',
+    href: '/blog/',
+    linkText: 'Read Blog Guides'
   }
 ];
 
@@ -66,7 +72,7 @@ export default function Services() {
             viewport={{ once: true }}
             className="inline-block px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold uppercase tracking-widest mb-4"
           >
-            Scale Faster
+            Scale Operations
           </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -75,16 +81,16 @@ export default function Services() {
             transition={{ delay: 0.1 }}
             className="text-4xl lg:text-6xl font-bold mb-6"
           >
-            Our Core <span className="gradient-text">AI Powered</span> Services
+            Core <span className="gradient-text">AI Automation</span> Agency Services
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="max-w-2xl mx-auto text-slate-400 text-lg"
+            className="max-w-2xl mx-auto text-slate-400 text-lg animate-fade-in"
           >
-            We don't just "use" AI—we build custom systems designed to solve your specific business bottlenecks and fuel aggressive growth.
+            We don't sell generic templates. We construct durable integrations and intelligent agents that solve core bottlenecks and grow your bottom line.
           </motion.p>
         </div>
 
@@ -96,20 +102,32 @@ export default function Services() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group hover:border-blue-500/30 transition-all"
+              className="p-8 rounded-3xl bg-white/5 border border-white/10 relative overflow-hidden group hover:border-blue-500/30 transition-all flex flex-col justify-between"
             >
               <div className="absolute -right-4 -top-4 w-20 h-20 bg-blue-600/10 blur-2xl group-hover:bg-blue-600/20 transition-all"></div>
-              <div className="w-12 h-12 mb-6 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+              <div>
+                <div className="w-12 h-12 mb-6 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 font-display tracking-tight uppercase">{service.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed mb-6">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3 font-display tracking-tight uppercase">{service.title}</h3>
-              <p className="text-sm text-slate-400 leading-relaxed mb-6">
-                {service.description}
-              </p>
               
-              <div className="pt-6 border-t border-white/5 flex flex-col space-y-1">
-                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Target ROI</span>
-                <span className="text-[11px] font-bold text-blue-400 uppercase tracking-widest">{service.outcome}</span>
+              <div className="pt-6 border-t border-white/5 space-y-4">
+                <div className="flex flex-col space-y-1">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Expected Outcome</span>
+                  <span className="text-[11px] font-bold text-blue-400 uppercase tracking-widest">{service.outcome}</span>
+                </div>
+                <div>
+                  <a 
+                    href={service.href} 
+                    className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wider text-blue-500 hover:text-blue-400 transition-colors group/link"
+                  >
+                    {service.linkText} <ChevronRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -21,15 +21,15 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6 w-fit">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
-              <span className="text-[10px] uppercase tracking-widest text-blue-400 font-bold">Next-Gen AI Systems</span>
+              <span className="text-[10px] uppercase tracking-widest text-blue-400 font-bold">Premium AI Automation Agency</span>
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6">
-              We Build AI That <span className="gradient-text">Grows Revenue.</span>
+              The Enterprise <span className="gradient-text">AI Automation Agency</span> Built for Revenue Growth
             </h1>
             
-            <p className="text-slate-400 text-lg leading-relaxed mb-8 max-w-sm">
-              Automate operations, engage leads, and scale faster with custom LLM agents and intelligent automation.
+            <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-8 max-w-md">
+              Stop wasting manual hours on repetitive operations. We build custom LLM agents, human-sounding voice solutions, and robust workflow automations designed to scale your operations 24/7.
             </p>
             
             <div className="flex gap-4 pt-4">
