@@ -2,6 +2,17 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "aiproconsultants.com"
+        }
+      ],
+      "destination": "https://www.aiproconsultants.com/:path*",
+      "statusCode": 301
+    },
+    {
       "source": "/5-signs-your-business-needs-ai-automation-right-now.html",
       "destination": "/blog/5-signs-your-business-needs-ai-automation-right-now/",
       "permanent": true
