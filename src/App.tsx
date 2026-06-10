@@ -31,6 +31,8 @@ import Footer from './components/Footer.tsx';
 import AuditModal from './components/AuditModal.tsx';
 import ChatBot from './components/ChatBot.tsx';
 import { BlogIndex, BlogPost } from './components/Blog.tsx';
+import SeoMapDashboard from './components/SeoMapDashboard.tsx';
+import EeatDashboard from './components/EeatDashboard.tsx';
 
 import { ModalContext, useModal } from './context/ModalContext.tsx';
 
@@ -826,6 +828,48 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'AI tools real estate Texas, AI automation real estate agent, real estate chatbot Texas, automate real estate follow up',
     url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
     ogType: 'article'
+  },
+  '/seo-map': {
+    title: 'Enterprise SEO Keyword Mapping & Strategy Command Center',
+    description: 'Interactive SEO strategy panel. Complete overview of keyphrase matrices, topical clustering hubs, internal link structures, and cannibalization threat audit.',
+    keywords: 'SEO strategy, keyword mapping, cannibalization audit, local SEO, enterprise marketing hubs, internal link silos',
+    url: 'https://www.aiproconsultants.com/seo-map',
+    ogType: 'website'
+  },
+  '/seo-map.html': {
+    title: 'Enterprise SEO Keyword Mapping & Strategy Command Center',
+    description: 'Interactive SEO strategy panel. Complete overview of keyphrase matrices, topical clustering hubs, internal link structures, and cannibalization threat audit.',
+    keywords: 'SEO strategy, keyword mapping, cannibalization audit, local SEO, enterprise marketing hubs, internal link silos',
+    url: 'https://www.aiproconsultants.com/seo-map',
+    ogType: 'website'
+  },
+  '/eeat': {
+    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
+    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
+    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
+    url: 'https://www.aiproconsultants.com/eeat',
+    ogType: 'website'
+  },
+  '/eeat.html': {
+    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
+    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
+    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
+    url: 'https://www.aiproconsultants.com/eeat',
+    ogType: 'website'
+  },
+  '/eeat-strategy': {
+    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
+    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
+    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
+    url: 'https://www.aiproconsultants.com/eeat',
+    ogType: 'website'
+  },
+  '/eeat-strategy.html': {
+    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
+    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
+    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
+    url: 'https://www.aiproconsultants.com/eeat',
+    ogType: 'website'
   }
 };
 
@@ -972,8 +1016,22 @@ export default function App() {
 
   const isBlogGrid = currentPath === '/blog' || currentPath === '/blog/' || currentPath === '/blog/index.html';
   const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
+  const isSeoMap = currentPath === '/seo' || currentPath === '/seo-map' || currentPath === '/seo-map.html' || currentPath === '/seo.html';
+  const isEeat = currentPath === '/eeat' || currentPath === '/eeat-strategy' || currentPath === '/eeat-strategy.html' || currentPath === '/eeat.html';
 
   const renderView = () => {
+    if (isEeat) {
+      return (
+        <EeatDashboard />
+      );
+    }
+
+    if (isSeoMap) {
+      return (
+        <SeoMapDashboard />
+      );
+    }
+
     if (isBlogGrid) {
       return (
         <BlogIndex onNavigate={navigate} openAudit={() => setIsAuditOpen(true)} />
