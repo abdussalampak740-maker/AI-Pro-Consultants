@@ -33,6 +33,7 @@ import ChatBot from './components/ChatBot.tsx';
 import { BlogIndex, BlogPost } from './components/Blog.tsx';
 import SeoMapDashboard from './components/SeoMapDashboard.tsx';
 import EeatDashboard from './components/EeatDashboard.tsx';
+import AeoGeoDashboard from './components/AeoGeoDashboard.tsx';
 
 import { ModalContext, useModal } from './context/ModalContext.tsx';
 
@@ -870,6 +871,34 @@ const META_MAP: Record<string, PageMeta> = {
     keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
     url: 'https://www.aiproconsultants.com/eeat',
     ogType: 'website'
+  },
+  '/aeo': {
+    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
+    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
+    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
+    url: 'https://www.aiproconsultants.com/aeo',
+    ogType: 'website'
+  },
+  '/aeo.html': {
+    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
+    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
+    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
+    url: 'https://www.aiproconsultants.com/aeo',
+    ogType: 'website'
+  },
+  '/aeo-strategy': {
+    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
+    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
+    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
+    url: 'https://www.aiproconsultants.com/aeo',
+    ogType: 'website'
+  },
+  '/aeo-strategy.html': {
+    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
+    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
+    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
+    url: 'https://www.aiproconsultants.com/aeo',
+    ogType: 'website'
   }
 };
 
@@ -1018,8 +1047,15 @@ export default function App() {
   const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
   const isSeoMap = currentPath === '/seo' || currentPath === '/seo-map' || currentPath === '/seo-map.html' || currentPath === '/seo.html';
   const isEeat = currentPath === '/eeat' || currentPath === '/eeat-strategy' || currentPath === '/eeat-strategy.html' || currentPath === '/eeat.html';
+  const isAeo = currentPath === '/aeo' || currentPath === '/aeo-strategy' || currentPath === '/aeo-strategy.html' || currentPath === '/aeo.html';
 
   const renderView = () => {
+    if (isAeo) {
+      return (
+        <AeoGeoDashboard />
+      );
+    }
+
     if (isEeat) {
       return (
         <EeatDashboard />
