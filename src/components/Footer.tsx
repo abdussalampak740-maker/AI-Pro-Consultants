@@ -36,13 +36,6 @@ export default function Footer() {
               <li><a href="/#results" className="hover:text-blue-400 transition-colors">Results</a></li>
               <li><a href="/blog/" className="hover:text-blue-400 transition-colors">Blog</a></li>
             </ul>
-
-            <h5 className="text-[10px] font-black uppercase text-white tracking-widest border-b border-white/5 pb-2 pt-4">SEO & Trust</h5>
-            <ul className="space-y-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
-              <li><a href="/seo-map" className="hover:text-blue-400 transition-colors">Keyword Map</a></li>
-              <li><a href="/eeat-strategy" className="hover:text-indigo-400 transition-colors">E-E-A-T Trust</a></li>
-              <li><a href="/aeo-strategy" className="hover:text-emerald-400 transition-colors">AEO/GEO Hub</a></li>
-            </ul>
           </div>
 
           {/* Column 3: Contact & Links */}
@@ -97,6 +90,9 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/blog/ai-automation-agency-houston-tx/" className="hover:text-blue-400 transition-colors">AI Automation Houston</a>
+              </li>
+              <li>
+                <a href="/ai-automation-for-law-firms-houston" className="hover:text-amber-400 font-extrabold transition-colors">Legal Automation Houston</a>
               </li>
               <li>
                 <a href="/blog/ai-automation-agency-lubbock-tx/" className="hover:text-blue-400 transition-colors">AI Automation Lubbock</a>

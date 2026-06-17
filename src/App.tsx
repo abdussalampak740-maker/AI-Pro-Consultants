@@ -31,9 +31,7 @@ import Footer from './components/Footer.tsx';
 import AuditModal from './components/AuditModal.tsx';
 import ChatBot from './components/ChatBot.tsx';
 import { BlogIndex, BlogPost } from './components/Blog.tsx';
-import SeoMapDashboard from './components/SeoMapDashboard.tsx';
-import EeatDashboard from './components/EeatDashboard.tsx';
-import AeoGeoDashboard from './components/AeoGeoDashboard.tsx';
+import HoustonLegalAutomation from './components/HoustonLegalAutomation.tsx';
 
 import { ModalContext, useModal } from './context/ModalContext.tsx';
 
@@ -669,6 +667,20 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/blog/',
     ogType: 'website'
   },
+  '/ai-automation-for-law-firms-houston': {
+    title: 'AI Automation for Law Firms Houston, Texas | AI Pro Consultants',
+    description: 'Expert AI automation for law firms in Houston, Texas. Deploy custom AI receptionist, legal intake automation, CRM integrations, and chatbots on Make.com & Zapier.',
+    keywords: 'AI automation for law firms Houston, law firm automation services Houston, AI chatbot for lawyers Houston, legal intake automation Houston, law firm CRM automation Houston, AI receptionist for law firms Houston, legal workflow automation Houston, legal tech',
+    url: 'https://www.aiproconsultants.com/ai-automation-for-law-firms-houston',
+    ogType: 'website'
+  },
+  '/ai-automation-for-law-firms-houston.html': {
+    title: 'AI Automation for Law Firms Houston, Texas | AI Pro Consultants',
+    description: 'Expert AI automation for law firms in Houston, Texas. Deploy custom AI receptionist, legal intake automation, CRM integrations, and chatbots on Make.com & Zapier.',
+    keywords: 'AI automation for law firms Houston, law firm automation services Houston, AI chatbot for lawyers Houston, legal intake automation Houston, law firm CRM automation Houston, AI receptionist for law firms Houston, legal workflow automation Houston, legal tech',
+    url: 'https://www.aiproconsultants.com/ai-automation-for-law-firms-houston',
+    ogType: 'website'
+  },
   'ai-automation-texas': {
     title: 'AI Automation Agency Texas | AI Pro Consultants',
     description: 'Looking for expert AI automation Texas solutions? AI Pro Consultants implements custom LLM chatbots and voice agents. Book a free consultation today!',
@@ -830,75 +842,26 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
     ogType: 'article'
   },
-  '/seo-map': {
-    title: 'Enterprise SEO Keyword Mapping & Strategy Command Center',
-    description: 'Interactive SEO strategy panel. Complete overview of keyphrase matrices, topical clustering hubs, internal link structures, and cannibalization threat audit.',
-    keywords: 'SEO strategy, keyword mapping, cannibalization audit, local SEO, enterprise marketing hubs, internal link silos',
-    url: 'https://www.aiproconsultants.com/seo-map',
-    ogType: 'website'
+  'ai-automation-law-firms-houston': {
+    title: 'AI Automation for Law Firms Houston, Texas',
+    description: 'Bespoke AI automation and integrations for Houston legal practices. Deploy custom receptionist, intake pipeline, and CRM systems with Clio grow, Make & Zapier.',
+    keywords: 'AI Automation for Law Firms Houston, law firm automation services Houston, AI chatbot for lawyers Houston, legal intake automation Houston, law firm CRM automation Houston, AI receptionist for law firms Houston, legal workflow automation Houston, legal tech',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-law-firms-houston/',
+    ogType: 'article'
   },
-  '/seo-map.html': {
-    title: 'Enterprise SEO Keyword Mapping & Strategy Command Center',
-    description: 'Interactive SEO strategy panel. Complete overview of keyphrase matrices, topical clustering hubs, internal link structures, and cannibalization threat audit.',
-    keywords: 'SEO strategy, keyword mapping, cannibalization audit, local SEO, enterprise marketing hubs, internal link silos',
-    url: 'https://www.aiproconsultants.com/seo-map',
-    ogType: 'website'
+  'ai-automation-healthcare-houston': {
+    title: 'AI Automation for Healthcare Houston, Texas',
+    description: 'Integrate HIPAA-compliant scheduling, patient intake, record systems, and medical billing AI structures for medical practices and clinical hubs in Houston, TX.',
+    keywords: 'AI Automation for Healthcare Houston, HIPAA-compliant AI chatbots Houston, clinical intake automation Houston, medical scheduling automation Houston, medical billing AI Houston, healthcare automation systems',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-healthcare-houston/',
+    ogType: 'article'
   },
-  '/eeat': {
-    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
-    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
-    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
-    url: 'https://www.aiproconsultants.com/eeat',
-    ogType: 'website'
-  },
-  '/eeat.html': {
-    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
-    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
-    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
-    url: 'https://www.aiproconsultants.com/eeat',
-    ogType: 'website'
-  },
-  '/eeat-strategy': {
-    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
-    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
-    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
-    url: 'https://www.aiproconsultants.com/eeat',
-    ogType: 'website'
-  },
-  '/eeat-strategy.html': {
-    title: 'E-E-A-T Trust & Authority Command Center | AI Pro Consultants',
-    description: 'Interactive verified trust & authority framework. Secure copy vectors, HIPAA compliance logs, real anonymized case studies, and exact integration patterns.',
-    keywords: 'E-E-A-T, Google Quality Evaluator, trust signals, AI security, HIPAA compliance workflow, anonymized case study copy',
-    url: 'https://www.aiproconsultants.com/eeat',
-    ogType: 'website'
-  },
-  '/aeo': {
-    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
-    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
-    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
-    url: 'https://www.aiproconsultants.com/aeo',
-    ogType: 'website'
-  },
-  '/aeo.html': {
-    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
-    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
-    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
-    url: 'https://www.aiproconsultants.com/aeo',
-    ogType: 'website'
-  },
-  '/aeo-strategy': {
-    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
-    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
-    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
-    url: 'https://www.aiproconsultants.com/aeo',
-    ogType: 'website'
-  },
-  '/aeo-strategy.html': {
-    title: 'AEO & GEO Search Engine Optimization Center | AI Pro Consultants',
-    description: 'Interactive AEO/GEO strategy dashboard. Answer Engine Optimization direct response parameters, schema markup, and Google AI Overviews emulations.',
-    keywords: 'AEO, GEO, Answer Engine Optimization, Generative Engine Optimization, search engine schema, featured snippets, structured markup AI',
-    url: 'https://www.aiproconsultants.com/aeo',
-    ogType: 'website'
+  'ai-automation-real-estate-houston': {
+    title: 'AI Automation for Real Estate Houston, Texas',
+    description: 'Scale your Houston real estate agency. Learn how Lead Follow-up automation, chatbots, and CRM sync tools help Texas agents qualify buyers and auto-sign listings.',
+    keywords: 'AI Automation for Real Estate Houston, real estate chatbot Houston, lead follow-up automation Houston, real estate CRM automation Houston, automated booking tools Houston, real estate agents Houston',
+    url: 'https://www.aiproconsultants.com/blog/ai-automation-real-estate-houston/',
+    ogType: 'article'
   }
 };
 
@@ -1005,6 +968,10 @@ export default function App() {
           e.preventDefault();
           window.history.pushState(null, '', href);
           window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (href === '/ai-automation-for-law-firms-houston' || href === '/ai-automation-for-law-firms-houston.html') {
+          e.preventDefault();
+          window.history.pushState(null, '', href);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         } else if (href === '/') {
           e.preventDefault();
           window.history.pushState(null, '', '/');
@@ -1045,26 +1012,12 @@ export default function App() {
 
   const isBlogGrid = currentPath === '/blog' || currentPath === '/blog/' || currentPath === '/blog/index.html';
   const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
-  const isSeoMap = currentPath === '/seo' || currentPath === '/seo-map' || currentPath === '/seo-map.html' || currentPath === '/seo.html';
-  const isEeat = currentPath === '/eeat' || currentPath === '/eeat-strategy' || currentPath === '/eeat-strategy.html' || currentPath === '/eeat.html';
-  const isAeo = currentPath === '/aeo' || currentPath === '/aeo-strategy' || currentPath === '/aeo-strategy.html' || currentPath === '/aeo.html';
+  const isHoustonLegal = currentPath === '/ai-automation-for-law-firms-houston' || currentPath === '/ai-automation-for-law-firms-houston.html';
 
   const renderView = () => {
-    if (isAeo) {
+    if (isHoustonLegal) {
       return (
-        <AeoGeoDashboard />
-      );
-    }
-
-    if (isEeat) {
-      return (
-        <EeatDashboard />
-      );
-    }
-
-    if (isSeoMap) {
-      return (
-        <SeoMapDashboard />
+        <HoustonLegalAutomation />
       );
     }
 
