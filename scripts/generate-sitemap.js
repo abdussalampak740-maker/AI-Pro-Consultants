@@ -64,8 +64,9 @@ function generateSitemap() {
         priority = '0.8';
         changefreq = 'weekly';
       } else {
-        // e.g. ai-automation-guide-for-b2b.html -> /ai-automation-guide-for-b2b.html
-        loc = `${BASE_URL}/${relativePath}`;
+        // e.g. ai-automation-guide-for-b2b.html -> /ai-automation-guide-for-b2b
+        const cleanPath = relativePath.replace(/\.html?$/, '');
+        loc = `${BASE_URL}/${cleanPath}`;
         priority = '0.8';
         changefreq = 'weekly';
       }

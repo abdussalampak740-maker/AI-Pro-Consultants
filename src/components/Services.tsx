@@ -16,7 +16,7 @@ const services = [
     icon: <Zap className="w-8 h-8 text-blue-400" />,
     description: 'We connect your tech stack and build custom automated workflows that run your business operations 24/7.',
     outcome: 'Save 20+ hours/week & remove manual errors.',
-    href: '/ai-workflow-automation.html',
+    href: '/ai-workflow-automation',
     linkText: 'Read Automation Guide'
   },
   {
@@ -24,7 +24,7 @@ const services = [
     icon: <MessageSquare className="w-8 h-8 text-purple-400" />,
     description: 'Bespoke intelligent chatbots trained exhaustively on your data profiles to handle sales qualifying and automated customer support.',
     outcome: 'Instant reply speed, 2.5x higher leads.',
-    href: '/llm-chatbot-development.html',
+    href: '/llm-chatbot-development',
     linkText: 'Read Chatbot Guide'
   },
   {
@@ -32,15 +32,15 @@ const services = [
     icon: <Mic className="w-8 h-8 text-pink-400" />,
     description: 'Ultra-low latency human-like voice systems designed for automated appointment booking, inbound support, and smart calls.',
     outcome: 'Zero missed lead calls & seamless scheduling.',
-    href: '/ai-voice-agents-guide.html',
+    href: '/ai-voice-agents-guide',
     linkText: 'Read Voice Agent Guide'
   },
   {
     title: 'AI Lead Generation',
     icon: <Share2 className="w-8 h-8 text-indigo-400" />,
-    description: 'Automated intent scraping, high-level intelligence prospecting, and hyper-targeted lead routing across b2b platforms.',
+    description: 'Automated intent scraping, high-level intelligence prospecting, and hyper-targeted lead routing across B2B platforms.',
     outcome: 'Eliminate cold outreach drag entirely.',
-    href: '/ai-lead-generation-automation.html',
+    href: '/ai-lead-generation-automation',
     linkText: 'Read Outbound Guide'
   },
   {
@@ -48,7 +48,7 @@ const services = [
     icon: <PenTool className="w-8 h-8 text-cyan-400" />,
     description: 'Decrease cart abandonment, personalize search recommending, and solve support backlogs with custom retail commerce integrations.',
     outcome: 'Optimize AOV & support-ticket resolution.',
-    href: '/ecommerce-ai-solutions.html',
+    href: '/ecommerce-ai-solutions',
     linkText: 'Read E-commerce Guide'
   },
   {
