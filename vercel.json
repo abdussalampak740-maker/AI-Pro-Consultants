@@ -43,5 +43,11 @@
       "destination": "/blog/ai-tools-real-estate-texas/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api|static|.*\\..*).*)$",
+      "destination": "/index.html"
+    }
   ]
 }
