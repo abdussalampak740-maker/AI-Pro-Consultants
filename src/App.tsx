@@ -32,6 +32,8 @@ import AuditModal from './components/AuditModal.tsx';
 import ChatBot from './components/ChatBot.tsx';
 import { BlogIndex, BlogPost } from './components/Blog.tsx';
 import HoustonLegalAutomation from './components/HoustonLegalAutomation.tsx';
+import TexasSEOServices from './components/TexasSEOServices.tsx';
+import LocalSEOServices from './components/LocalSEOServices.tsx';
 
 import { ModalContext, useModal } from './context/ModalContext.tsx';
 
@@ -504,70 +506,70 @@ const Resources = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-2xl font-bold text-white mb-8 uppercase tracking-widest text-center lg:text-left text-sm md:text-2xl">Free Resources & Guides</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="/ai-automation-guide-for-b2b.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ai-automation-guide-for-b2b" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Automation Guide for B2B Companies</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Master efficiency with our comprehensive guide to custom LLMs and workflow agents.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/ai-voice-agents-guide.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ai-voice-agents-guide" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Voice Agents: Complete Guide</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Scale your inbound and outbound calls with human-like AI voice systems.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/llm-chatbot-development.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/llm-chatbot-development" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">Custom LLM Chatbot Development</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Why generic bots fail and how custom-trained LLMs drive real business results.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/healthcare-ai-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/healthcare-ai-automation" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI for Healthcare Providers</h3>
           <p className="text-xs text-slate-500 leading-relaxed">HIPAA-compliant automation for scheduling, billing, and patient follow-ups.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/ecommerce-ai-solutions.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ecommerce-ai-solutions" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Solutions for E-commerce</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Reduce support tickets and increase AOV with intelligent commerce agents.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/ai-workflow-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ai-workflow-automation" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Workflow Automation</h3>
           <p className="text-xs text-slate-500 leading-relaxed">How to save 20+ hours every week by connecting your high-level tech stack.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/ai-automation-roi-calculator-guide.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ai-automation-roi-calculator-guide" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Automation ROI Guide</h3>
           <p className="text-xs text-slate-500 leading-relaxed">The mathematical framework for calculating the profit of AI in your business.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/n8n-vs-make-vs-zapier.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/n8n-vs-make-vs-zapier" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">n8n vs Make.com vs Zapier</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Expert comparison of the top automation tools for business AI scaling.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/ai-lead-generation-automation.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/ai-lead-generation-automation" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">AI Lead Generation Automation</h3>
           <p className="text-xs text-slate-500 leading-relaxed">Precision B2B prospecting using intent-based AI research and outreach.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
             Read Guide <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </div>
         </a>
-        <a href="/what-is-ai-agent.html" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
+        <a href="/what-is-ai-agent" className="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group">
           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400 transition-colors text-sm">What is an AI Agent?</h3>
           <p className="text-xs text-slate-500 leading-relaxed">A plain English explanation of the future of autonomous business work.</p>
           <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-blue-500 uppercase tracking-widest">
@@ -639,13 +641,6 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/',
     ogType: 'website'
   },
-  '/index.html': {
-    title: 'AI Automation Agency | Custom LLM, Chatbots & Voice Systems | AI Pro Consultants',
-    description: 'Top-rated AI automation agency specialized in bespoke enterprise workflows, intelligent conversational voice agents, custom LLM chatbots, and high-ROI systems for B2B, healthcare, and e-commerce companies.',
-    keywords: 'AI automation agency, AI voice agents, custom LLM chatbots, AI workflow automation, healthcare AI, ecommerce AI solutions, AI lead generation, GEO SEO citation, AI Pro Consultants',
-    url: 'https://www.aiproconsultants.com/',
-    ogType: 'website'
-  },
   '/blog': {
     title: 'Blog — AI Automation Insights | AI Pro Consultants',
     description: 'Expert guides on AI automation, chatbots, and voice agents for US businesses. City-specific AI automation resources for Texas, Florida, and beyond.',
@@ -660,21 +655,14 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/blog/',
     ogType: 'website'
   },
-  '/blog/index.html': {
-    title: 'Blog — AI Automation Insights | AI Pro Consultants',
-    description: 'Expert guides on AI automation, chatbots, and voice agents for US businesses. City-specific AI automation resources for Texas, Florida, and beyond.',
-    keywords: 'AI automation blog, Texas AI agency, business AI solutions, AI consulting, custom LLM guide',
-    url: 'https://www.aiproconsultants.com/blog/',
+  '/seo-services-texas': {
+    title: 'Texas SEO Services | AI-Powered Search Ranking | AI Pro Consultants',
+    description: 'Premier AI-powered SEO services in Texas. We build custom local citations, semantic content cluster maps, and automated SGE indexing channels for elite businesses.',
+    keywords: 'SEO services Texas, Texas SEO agency, local SEO services Texas, SEO content marketing Texas, SGE AI optimization Texas, geo seo citations',
+    url: 'https://www.aiproconsultants.com/seo-services-texas',
     ogType: 'website'
   },
   '/ai-automation-for-law-firms-houston': {
-    title: 'AI Automation for Law Firms Houston, Texas | AI Pro Consultants',
-    description: 'Expert AI automation for law firms in Houston, Texas. Deploy custom AI receptionist, legal intake automation, CRM integrations, and chatbots on Make.com & Zapier.',
-    keywords: 'AI automation for law firms Houston, law firm automation services Houston, AI chatbot for lawyers Houston, legal intake automation Houston, law firm CRM automation Houston, AI receptionist for law firms Houston, legal workflow automation Houston, legal tech',
-    url: 'https://www.aiproconsultants.com/ai-automation-for-law-firms-houston',
-    ogType: 'website'
-  },
-  '/ai-automation-for-law-firms-houston.html': {
     title: 'AI Automation for Law Firms Houston, Texas | AI Pro Consultants',
     description: 'Expert AI automation for law firms in Houston, Texas. Deploy custom AI receptionist, legal intake automation, CRM integrations, and chatbots on Make.com & Zapier.',
     keywords: 'AI automation for law firms Houston, law firm automation services Houston, AI chatbot for lawyers Houston, legal intake automation Houston, law firm CRM automation Houston, AI receptionist for law firms Houston, legal workflow automation Houston, legal tech',
@@ -835,13 +823,6 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
     ogType: 'article'
   },
-  'ai-tools-real-estate-texas.html': {
-    title: 'Best AI Tools for Texas Real Estate Agents 2026',
-    description: 'The best AI tools and automation systems for Texas real estate agents in 2026. Cut follow-up time, qualify leads faster, and close more deals.',
-    keywords: 'AI tools real estate Texas, AI automation real estate agent, real estate chatbot Texas, automate real estate follow up',
-    url: 'https://www.aiproconsultants.com/blog/ai-tools-real-estate-texas/',
-    ogType: 'article'
-  },
   'ai-automation-law-firms-houston': {
     title: 'AI Automation for Law Firms Houston, Texas',
     description: 'Bespoke AI automation and integrations for Houston legal practices. Deploy custom receptionist, intake pipeline, and CRM systems with Clio grow, Make & Zapier.',
@@ -867,11 +848,37 @@ const META_MAP: Record<string, PageMeta> = {
 
 export default function App() {
   const [isAuditOpen, setIsAuditOpen] = useState(false);
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [currentPath, setCurrentPath] = useState(() => {
+    const initialPath = window.location.pathname;
+    if (initialPath.endsWith('.html') || initialPath.endsWith('.htm')) {
+      const cleanPath = initialPath.replace(/\.html?$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+      return cleanPath;
+    }
+    return initialPath;
+  });
 
   useEffect(() => {
     // Dynamic SEO Metadata Sync for Client-side SPA navigation
     let meta = META_MAP[currentPath];
+    
+    // Dynamic generation of SEO metadata for `/seo-services-<city>` !
+    if (!meta && currentPath.startsWith('/seo-services-')) {
+      const match = currentPath.match(/^\/seo-services-([a-z-]+)(?:\.html)?$/);
+      if (match) {
+        const citySlug = match[1];
+        if (['houston', 'dallas', 'austin', 'san-antonio', 'fort-worth', 'el-paso', 'arlington', 'corpus-christi', 'plano', 'lubbock', 'amarillo'].includes(citySlug)) {
+          const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+          meta = {
+            title: `SEO Services ${cityName}, TX | AI-Powered Search Optimization | AI Pro Consultants`,
+            description: `Elite AI-powered SEO organic search campaigns in ${cityName}, Texas. We deploy semantic content hubs, local Google Maps ranking grids, and SGE optimizations.`,
+            keywords: `SEO services ${cityName}, ${cityName} SEO agency, local SEO services ${cityName}, SEO content marketing ${cityName}, SGE optimization ${cityName}`,
+            url: `https://www.aiproconsultants.com/seo-services-${citySlug}`,
+            ogType: 'website'
+          };
+        }
+      }
+    }
     
     // Fallback if checked route is nested blog sub-slug
     if (!meta && currentPath.startsWith('/blog/')) {
@@ -930,7 +937,13 @@ export default function App() {
 
   useEffect(() => {
     const handleLocationChange = () => {
-      setCurrentPath(window.location.pathname);
+      let path = window.location.pathname;
+      if (path.endsWith('.html') || path.endsWith('.htm')) {
+        const cleanPath = path.replace(/\.html?$/, '');
+        window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+        path = cleanPath;
+      }
+      setCurrentPath(path);
     };
 
     // Listen to browser navigation buttons
@@ -964,25 +977,36 @@ export default function App() {
       
       const href = target.getAttribute('href');
       if (href) {
-        if (href.startsWith('/blog/')) {
+        // Automatically make clean
+        const cleanHref = href.endsWith('.html') ? href.slice(0, -5) : (href.endsWith('.htm') ? href.slice(0, -4) : href);
+        
+        if (cleanHref.startsWith('/blog/')) {
           e.preventDefault();
-          window.history.pushState(null, '', href);
+          window.history.pushState(null, '', cleanHref);
           window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (href === '/ai-automation-for-law-firms-houston' || href === '/ai-automation-for-law-firms-houston.html') {
+        } else if (cleanHref === '/ai-automation-for-law-firms-houston') {
           e.preventDefault();
-          window.history.pushState(null, '', href);
+          window.history.pushState(null, '', cleanHref);
           window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (href === '/') {
+        } else if (cleanHref === '/seo-services-texas') {
+          e.preventDefault();
+          window.history.pushState(null, '', cleanHref);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (cleanHref.startsWith('/seo-services-')) {
+          e.preventDefault();
+          window.history.pushState(null, '', cleanHref);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (cleanHref === '/') {
           e.preventDefault();
           window.history.pushState(null, '', '/');
           window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (href.startsWith('#')) {
+        } else if (cleanHref.startsWith('#')) {
           // If viewing blog, navigate back to home grid with hash
           if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
             e.preventDefault();
-            window.history.pushState(null, '', '/' + href);
+            window.history.pushState(null, '', '/' + cleanHref);
             setTimeout(() => {
-              const el = document.getElementById(href.substring(1));
+              const el = document.getElementById(cleanHref.substring(1));
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }, 150);
           }
@@ -1010,11 +1034,30 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const isBlogGrid = currentPath === '/blog' || currentPath === '/blog/' || currentPath === '/blog/index.html';
+  const isBlogGrid = currentPath === '/blog' || currentPath === '/blog/';
   const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
-  const isHoustonLegal = currentPath === '/ai-automation-for-law-firms-houston' || currentPath === '/ai-automation-for-law-firms-houston.html';
+  const isHoustonLegal = currentPath === '/ai-automation-for-law-firms-houston';
+  const isTexasSEO = currentPath === '/seo-services-texas';
+  const isLocalSEO = currentPath.startsWith('/seo-services-') && 
+    ['houston', 'dallas', 'austin', 'san-antonio', 'fort-worth', 'el-paso', 'arlington', 'corpus-christi', 'plano', 'lubbock', 'amarillo'].some(city => 
+      currentPath === `/seo-services-${city}`
+    );
 
   const renderView = () => {
+    if (isLocalSEO) {
+      const match = currentPath.match(/^\/seo-services-([a-z-]+)(?:\.html)?$/);
+      const citySlug = match ? match[1] : 'houston';
+      return (
+        <LocalSEOServices citySlug={citySlug} />
+      );
+    }
+
+    if (isTexasSEO) {
+      return (
+        <TexasSEOServices />
+      );
+    }
+
     if (isHoustonLegal) {
       return (
         <HoustonLegalAutomation />

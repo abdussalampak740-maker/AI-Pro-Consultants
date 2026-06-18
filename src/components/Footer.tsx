@@ -95,6 +95,9 @@ export default function Footer() {
                 <a href="/ai-automation-for-law-firms-houston" className="hover:text-amber-400 font-extrabold transition-colors">Legal Automation Houston</a>
               </li>
               <li>
+                <a href="/seo-services-texas" className="hover:text-sky-400 font-extrabold transition-colors">Texas SEO Services</a>
+              </li>
+              <li>
                 <a href="/blog/ai-automation-agency-lubbock-tx/" className="hover:text-blue-400 transition-colors">AI Automation Lubbock</a>
               </li>
               <li>

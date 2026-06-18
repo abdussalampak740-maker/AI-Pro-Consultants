@@ -35,6 +35,7 @@ export default function Navbar() {
             <a href="/#how-it-works" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Process</a>
             <a href="/#results" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Results</a>
             <a href="/blog/" className="text-xs font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Blog</a>
+            <a href="/seo-services-texas" className="text-xs font-semibold uppercase tracking-widest text-sky-400 hover:text-sky-300 transition-colors">SEO Services</a>
             <button 
               onClick={openAudit}
               className="px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-lg shadow-blue-500/20"
@@ -64,6 +65,7 @@ export default function Navbar() {
           <a href="/#how-it-works" className="block text-base font-medium text-slate-300 hover:text-blue-400">Process</a>
           <a href="/#results" className="block text-base font-medium text-slate-300 hover:text-blue-400">Results</a>
           <a href="/blog/" className="block text-base font-medium text-slate-300 hover:text-blue-400">Blog</a>
+          <a href="/seo-services-texas" className="block text-base font-medium text-sky-450 hover:text-sky-300">SEO Services</a>
           <button 
             onClick={() => {
               setIsOpen(false);
