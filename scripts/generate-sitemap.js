@@ -82,6 +82,26 @@ function generateSitemap() {
       });
     }
 
+    // Dynamic SEO and local pages that are handled client-side in React
+    const dynamicRoutes = [
+      '/ai-automation-for-law-firms-houston',
+      '/seo-services-texas',
+      ...['houston', 'dallas', 'austin', 'san-antonio', 'fort-worth', 'el-paso', 'arlington', 'corpus-christi', 'plano', 'lubbock', 'amarillo'].map(city => `/seo-services-${city}`)
+    ];
+
+    const todayStr = new Date().toISOString().split('T')[0];
+    for (const route of dynamicRoutes) {
+      const locUrl = `${BASE_URL}${route}`;
+      if (!pages.some(page => page.loc === locUrl)) {
+        pages.push({
+          loc: locUrl,
+          priority: '0.8',
+          changefreq: 'weekly',
+          lastmod: todayStr
+        });
+      }
+    }
+
     // Build XML content string
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
     xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
