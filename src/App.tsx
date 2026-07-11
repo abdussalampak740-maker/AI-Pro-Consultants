@@ -34,6 +34,7 @@ import { BlogIndex, BlogPost } from './components/Blog.tsx';
 import HoustonLegalAutomation from './components/HoustonLegalAutomation.tsx';
 import TexasSEOServices from './components/TexasSEOServices.tsx';
 import LocalSEOServices from './components/LocalSEOServices.tsx';
+import PrivacyPolicy from './components/PrivacyPolicy.tsx';
 
 import { ModalContext, useModal } from './context/ModalContext.tsx';
 
@@ -669,6 +670,13 @@ const META_MAP: Record<string, PageMeta> = {
     url: 'https://www.aiproconsultants.com/ai-automation-for-law-firms-houston',
     ogType: 'website'
   },
+  '/privacy-policy': {
+    title: 'Privacy Policy | AI Pro Consultants',
+    description: 'Privacy Policy for AI Pro Consultants. Learn how we collect, use, and protect your personal information.',
+    keywords: 'privacy policy, AI Pro Consultants, data safety, legal disclosure',
+    url: 'https://www.aiproconsultants.com/privacy-policy',
+    ogType: 'website'
+  },
   'ai-automation-texas': {
     title: 'AI Automation Agency Texas | AI Pro Consultants',
     description: 'Looking for expert AI automation Texas solutions? AI Pro Consultants implements custom LLM chatbots and voice agents. Book a free consultation today!',
@@ -992,6 +1000,10 @@ export default function App() {
           e.preventDefault();
           window.history.pushState(null, '', cleanHref);
           window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (cleanHref === '/privacy-policy') {
+          e.preventDefault();
+          window.history.pushState(null, '', cleanHref);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         } else if (cleanHref.startsWith('/seo-services-')) {
           e.preventDefault();
           window.history.pushState(null, '', cleanHref);
@@ -1038,6 +1050,7 @@ export default function App() {
   const isBlogPost = currentPath.startsWith('/blog/') && !isBlogGrid;
   const isHoustonLegal = currentPath === '/ai-automation-for-law-firms-houston';
   const isTexasSEO = currentPath === '/seo-services-texas';
+  const isPrivacyPolicy = currentPath === '/privacy-policy';
   const isLocalSEO = currentPath.startsWith('/seo-services-') && 
     ['houston', 'dallas', 'austin', 'san-antonio', 'fort-worth', 'el-paso', 'arlington', 'corpus-christi', 'plano', 'lubbock', 'amarillo'].some(city => 
       currentPath === `/seo-services-${city}`
@@ -1061,6 +1074,12 @@ export default function App() {
     if (isHoustonLegal) {
       return (
         <HoustonLegalAutomation />
+      );
+    }
+
+    if (isPrivacyPolicy) {
+      return (
+        <PrivacyPolicy />
       );
     }
 

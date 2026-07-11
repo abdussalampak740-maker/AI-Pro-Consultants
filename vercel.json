@@ -46,6 +46,102 @@
   ],
   "rewrites": [
     {
+      "source": "/seo-services-texas",
+      "destination": "/seo-services-texas.html"
+    },
+    {
+      "source": "/seo-services-houston",
+      "destination": "/seo-services-houston.html"
+    },
+    {
+      "source": "/seo-services-dallas",
+      "destination": "/seo-services-dallas.html"
+    },
+    {
+      "source": "/seo-services-austin",
+      "destination": "/seo-services-austin.html"
+    },
+    {
+      "source": "/seo-services-san-antonio",
+      "destination": "/seo-services-san-antonio.html"
+    },
+    {
+      "source": "/seo-services-fort-worth",
+      "destination": "/seo-services-fort-worth.html"
+    },
+    {
+      "source": "/seo-services-el-paso",
+      "destination": "/seo-services-el-paso.html"
+    },
+    {
+      "source": "/seo-services-arlington",
+      "destination": "/seo-services-arlington.html"
+    },
+    {
+      "source": "/seo-services-corpus-christi",
+      "destination": "/seo-services-corpus-christi.html"
+    },
+    {
+      "source": "/seo-services-plano",
+      "destination": "/seo-services-plano.html"
+    },
+    {
+      "source": "/seo-services-lubbock",
+      "destination": "/seo-services-lubbock.html"
+    },
+    {
+      "source": "/seo-services-amarillo",
+      "destination": "/seo-services-amarillo.html"
+    },
+    {
+      "source": "/ai-automation-for-law-firms-houston",
+      "destination": "/ai-automation-for-law-firms-houston.html"
+    },
+    {
+      "source": "/ai-automation-guide-for-b2b",
+      "destination": "/ai-automation-guide-for-b2b.html"
+    },
+    {
+      "source": "/ai-automation-roi-calculator-guide",
+      "destination": "/ai-automation-roi-calculator-guide.html"
+    },
+    {
+      "source": "/ai-lead-generation-automation",
+      "destination": "/ai-lead-generation-automation.html"
+    },
+    {
+      "source": "/ai-voice-agents-guide",
+      "destination": "/ai-voice-agents-guide.html"
+    },
+    {
+      "source": "/ai-workflow-automation",
+      "destination": "/ai-workflow-automation.html"
+    },
+    {
+      "source": "/ecommerce-ai-solutions",
+      "destination": "/ecommerce-ai-solutions.html"
+    },
+    {
+      "source": "/healthcare-ai-automation",
+      "destination": "/healthcare-ai-automation.html"
+    },
+    {
+      "source": "/llm-chatbot-development",
+      "destination": "/llm-chatbot-development.html"
+    },
+    {
+      "source": "/n8n-vs-make-vs-zapier",
+      "destination": "/n8n-vs-make-vs-zapier.html"
+    },
+    {
+      "source": "/what-is-ai-agent",
+      "destination": "/what-is-ai-agent.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

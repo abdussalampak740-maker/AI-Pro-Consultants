@@ -35,6 +35,7 @@ export default function Footer() {
               <li><a href="/#how-it-works" className="hover:text-blue-400 transition-colors">Process</a></li>
               <li><a href="/#results" className="hover:text-blue-400 transition-colors">Results</a></li>
               <li><a href="/blog/" className="hover:text-blue-400 transition-colors">Blog</a></li>
+              <li><a href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -120,7 +121,7 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex items-center gap-6 uppercase tracking-tighter font-bold">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
           </div>
           <div className="font-mono tracking-widest text-slate-600">
